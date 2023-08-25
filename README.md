@@ -1,6 +1,6 @@
 # Brescia Pride
 
-Brescia Pride is an inclusive and vibrant community dedicated to celebrating diversity and promoting LGBTQ+ rights and awareness. This project serves as the online hub for Brescia Pride, providing information about events, resources, and opportunities for participation.
+Brescia Pride is an inclusive and vibrant community dedicated to celebrating diversity and promoting LGBTQ+ rights and awareness. This project serves as the landing page for Brescia Pride, providing information about events and resources.
 
 ## About Brescia Pride
 
