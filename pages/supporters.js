@@ -67,7 +67,7 @@ export default function Supporters() {
                 >
                   <h3 key={`type${type}`} id={`type${type}`}>
                     <span>{filteredSupporters.length} {type}</span>
-                    <span>Patrocinio</span>
+                    <span>{filteredSupporters.length > 1 ? "Patrocinano" : "Patrocina"}</span>
                   </h3>
                   {filteredSupporters.map((supporter, index) => (
                     <Supporter
@@ -93,7 +93,7 @@ export default function Supporters() {
                 >
                   <h3 key={`type${type}`} id={`type${type}`}>
                     <span>{filteredSupporters.length} {type}</span>
-                    <span>Aderiscono</span>
+                    <span>{filteredSupporters.length > 1 ? "Aderiscono" : "Aderisce"}</span>
                   </h3>
                   {filteredSupporters.map((supporter, index) => (
                     <Supporter
