@@ -53,7 +53,7 @@ export default function EntryPoint() {
     },
     {
       title: "Piazza",
-      desc: ["La piazza sarà il luogo di incontro e di reinvinicazione, dove potrai ascoltare gli interventi dei nostri ospiti."],
+      desc: ["La piazza sarà il luogo di incontro e di reinvinicazione, dove potrai ascoltare gli interventi dei nostri ospit3."],
       component: Stage,
     },
     {
