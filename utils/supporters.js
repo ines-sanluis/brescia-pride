@@ -1,5 +1,5 @@
 export const TYPES = {
-  MUNICIPALITY: "Comuni",
+  MUNICIPALITY: "Comune",
   ASSOCIATION: "Associazioni",
   COLLECTIVE: "Collettivi",
   ENTITY: "Enti",

@@ -50,7 +50,7 @@ export default function Supporters() {
                 area-aria-labelledby={`type${type}`}
               >
                 <h2 key={`type${type}`} id={`type${type}`}>
-                  {type}
+                  {filteredSupporters.length} {type}
                 </h2>
                 {filteredSupporters.map((supporter, index) => (
                   <Supporter
