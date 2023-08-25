@@ -30,6 +30,7 @@ export default function Supporter({ title, description, links }: Props) {
         }
         .supporter-container > h4 {
           font-family: "ST";
+          font-weight: 400;
         }
       `}</style>
     </>

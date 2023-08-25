@@ -4,8 +4,6 @@ import WarningIcon from '../Icons/WarningIcon'
 import SunIcon from '../Icons/SunIcon'
 import TreeIcon from '../Icons/TreeIcon'
 import Heart from '../Icons/HeartIcon'
-import PhoneIcon from '../Icons/PhoneIcon'
-import { phoneNumber } from '../../utils/constants'
 
 export default function Care()  {
   return (

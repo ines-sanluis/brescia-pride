@@ -58,7 +58,7 @@ export default function EntryPoint() {
     },
     {
       title: "Cura",
-      desc: ["Abbiamo a cuore la salute di tutte e tutti, per questo abbiamo pensato a delle misure di prevenzione e sicurezza."],
+      desc: ["Per rendere la giornata ulteriormente sicura per tutt3, ti invitiamo a qualche accorgimento."],
       component: Care,
     },
   ];
