@@ -19,7 +19,7 @@ function Button({
     <>
       <button
         onClick={onClick}
-        style={{ width: width || "auto" }}
+        style={{ width: "fit-content" }}
         className="custom-button"
       >
         {text}

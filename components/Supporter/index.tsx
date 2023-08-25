@@ -18,7 +18,7 @@ export default function Supporter({ title, description, links }: Props) {
   return (
     <>
       <section className="supporter-container">
-        <h3>{title}</h3>
+        <h4>{title}</h4>
         {links && <SocialLinks links={links} />}
         <p>{description}</p>
       </section>
@@ -27,6 +27,9 @@ export default function Supporter({ title, description, links }: Props) {
           display: flex;
           flex-direction: column;
           gap: var(--gutter);
+        }
+        .supporter-container > h4 {
+          font-family: "ST";
         }
       `}</style>
     </>
