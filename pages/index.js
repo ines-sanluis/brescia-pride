@@ -11,6 +11,7 @@ import Accessibility from "../components/Accessibility";
 import Care from "../components/Care";
 import Cars from "../components/Cars";
 import Button from "../components/Button";
+import Guests from "../components/Guests";
 
 export default function EntryPoint() {
   // Hide arrow when the user has scrolled down
@@ -47,14 +48,19 @@ export default function EntryPoint() {
       component: Accessibility,
     },
     {
-      title: "I Carri",
+      title: "Carri",
       desc: ["Sei realtà ci accompagneranno durante la sfilata dei nostri corpi e delle nostre reivindicazioni lungo le vie della città."],
       component: Cars,
     },
     {
       title: "Piazza",
-      desc: ["La piazza sarà il luogo di incontro e di reinvinicazione, dove potrai ascoltare gli interventi dei nostri ospiti."],
+      desc: ["La piazza sarà il luogo di incontro e di reinvinicazione, dove potrai ascoltare gli interventi dell3 ospiti."],
       component: Stage,
+    },
+    {
+      title: "Ospiti",
+      desc: ["Saranno con noi per raccontare le loro esperienze e le loro battaglie."],
+      component: Guests,
     },
     {
       title: "Cura",
