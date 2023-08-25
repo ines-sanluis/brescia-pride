@@ -1,4 +1,4 @@
-# CineMagic
+# Friends
 
 This project involved creating a proof of concept (POC) for a GPT-powered search bar within an OTT app, showcasing the potential of intelligent movie search and discovery.
 
@@ -15,7 +15,7 @@ It also uses OpenAI API [quickstart tutorial](https://platform.openai.com/docs/q
 3. Navigate into the project directory
 
    ```bash
-   $ cd cinemagic
+   $ cd friends
    ```
 
 4. Install the requirements

@@ -1,6 +1,17 @@
-import './styles.css'
+import '../styles/globals.css'
+import { Inter } from 'next/font/google'
 
-// This default export is required in a new `pages/_app.js` file.
+const inter = Inter({ subsets: ['latin'] })
+
 export default function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
+    return (
+        <>
+        <style jsx global>{`
+            html {
+            font-family: ${inter.style.fontFamily};
+            }
+        `}</style>
+        <Component {...pageProps} />
+        </>
+    )
 }
