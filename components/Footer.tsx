@@ -30,12 +30,22 @@ export default function Footer() {
       <div className="credits">
         <p>
           Fatto da  <a
+            href="https://linkedin.com/in/ines-sanluis"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            >
+            Inés San Luís
+          </a>
+        </p>
+        <p>
+          <a
             href="https://github.com/ines-sanluis/brescia-pride"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            Inés San Luís
+            GitHub
           </a>
         </p>
       </div>
@@ -53,6 +63,9 @@ export default function Footer() {
           font-size: 0.8rem;
           text-color: var(--gray);
           text-align: center;
+          display: flex;
+          flex-direction: column;
+          gap: var(--half-gutter);
         }
       `}</style>
     </footer>
