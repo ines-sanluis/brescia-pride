@@ -35,11 +35,11 @@ export default function Care()  {
         backgroundColor="yellow"
         name="Dalle 15:30 alle 20, ci saranno membri del Comitato e referenti riconoscibili per qualsiasi necessità"
       />
-      <PhoneIcon
+      {/* <PhoneIcon
         color="brown"
         backgroundColor="yellow"
         name={`Per le emergenze, contatta il numero ${phoneNumber}`}
-      />
+      /> */}
     </>
   )
 }

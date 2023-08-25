@@ -32,12 +32,12 @@ export const sponsors = [
     }
   },
   {
-    title: "Moniga del Garda",
+    title: "Passirano",
     type: SPONSORS_TYPES.MUNICIPALITY,
-    description: "Comune di Moniga del Garda.",
+    description: "Comune di Passirano.",
     links: {
-      web: "comune.monigadelgarda.bs.it",
-      facebook: "comunemoniga",
+      web: "comune.passirano.bs.it",
+      facebook: "comunedipassirano",
     },
   },
   {
@@ -47,15 +47,6 @@ export const sponsors = [
     links: {
       web: "comune.bovezzo.bs.it",
       facebook: "comunedibovezzo",
-    },
-  },
-  {
-    title: "Passirano",
-    type: SPONSORS_TYPES.MUNICIPALITY,
-    description: "Comune di Passirano.",
-    links: {
-      web: "comune.passirano.bs.it",
-      facebook: "comunedipassirano",
     },
   },
   {
@@ -74,6 +65,34 @@ export const sponsors = [
     links: {
       web: "comune.verolavecchia.bs.it",
       facebook: "comuneverolavecchia"
+    }
+  },
+  {
+    title: "Moniga del Garda",
+    type: SPONSORS_TYPES.MUNICIPALITY,
+    description: "Comune di Moniga del Garda.",
+    links: {
+      web: "comune.monigadelgarda.bs.it",
+      facebook: "comunemoniga",
+    },
+  },
+  {
+    title: "Nave",
+    type: SPONSORS_TYPES.MUNICIPALITY,
+    description: "Comune di Nave.",
+    links: {
+      web: "comune.nave.bs.it",
+      instagram: "comunedinave",
+      facebook: "profile.php?id=100063838500444",
+    },
+  },
+  {
+    title: "Provaglio d'Iseo",
+    type: SPONSORS_TYPES.MUNICIPALITY,
+    description: "Comune di Provaglio d'Iseo.",
+    links: {
+      web: "comune.provagliodiseo.bs.it",
+      facebook: "profile.php?id=100064599349587"
     }
   },
   {
