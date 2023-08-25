@@ -17,6 +17,7 @@ export default function Supporters() {
   return (
     <>
       <PageLayout title="Sostenitori">
+        <p>L'unione fa la forza e sei ancora in tempo!</p>
         <section>
           <h2>Patrocini</h2>
           <p>
@@ -53,7 +54,7 @@ export default function Supporters() {
           <p>
             Esprimiamo la nostra gratitudine ai nostri preziosi sostenitori che
             hanno aderito o concesso il patrocinio al nostro progetto. Il vostro
-            sostegno è fondamentale. L'unione fa la forza!
+            sostegno è fondamentale.
           </p>
           {Object.values(SPONSORS_TYPES).map((type) => {
             let filteredSupporters = sponsors.filter(
