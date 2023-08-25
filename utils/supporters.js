@@ -168,7 +168,7 @@ export const supporters = [
     description:
       "Il SISM si adopera per rispondere ai bisogni di salute dell’individuo attraverso contributi qualificanti alla formazione accademica degli studenti, alla loro sensibilizzazione sui profili etici e sociali della professione medica e alla crescita intellettuale, professionale e deontologica delle nuove classi mediche, anche attraverso l’informazione e l’educazione sanitaria della popolazione.",
     links: {
-      web: "brescia.sism.org",
+      instagram: "sismbrescia",
     },
   },
   {
