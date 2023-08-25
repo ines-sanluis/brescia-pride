@@ -6,6 +6,7 @@ import Tshirt from "../components/Icons/TshirtIcon";
 import People from "../components/Icons/PeopleIcon";
 import Instagram from "../components/Icons/InstagramIcon";
 import Button from "../components/Button";
+import { socialLinks } from "../utils/constants";
 
 export default function About() {
   const openStatute = () => {
@@ -69,7 +70,7 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ci trovi su Instagram come @bresciapride.
+                Ci trovi su Instagram come @{socialLinks.instagram}.
               </a>
             }
           />
