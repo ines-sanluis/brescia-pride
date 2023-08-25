@@ -45,7 +45,7 @@ export default function Timeline() {
       <div className="timeline">
         {history.map((year, index) => (
           <div className="timeline-component" key={index}>
-            <Time time={year.year.toString()} title={year.motto} color="red" />
+            <Time time={year.year.toString()} title={year.motto} color="red"/>
             <p>{year.description}</p>
           </div>
         ))}
