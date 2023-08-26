@@ -9,7 +9,6 @@ interface Links {
 
 interface Props {
   title: string;
-  type: string;
   description: string;
   links?: Links;
 }

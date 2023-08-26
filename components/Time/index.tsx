@@ -19,8 +19,8 @@ export default function Time({ title, location, time, color, details}: Props) {
           </div>
           <p>{time}</p>
         </div>
-        {details?.map((detail) => (
-          <p key="detail">{detail}</p>
+        {details?.map((detail, index) => (
+          <p key={`time-${title}-detail-${index}`}>{detail}</p>
         ))}
       </section>
       <style jsx>{`
