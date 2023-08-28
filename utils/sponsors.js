@@ -103,5 +103,15 @@ export const sponsors = [
       facebook: "unibs.official",
       instagram: "unibs.official"
     },
+  },
+  {
+    title: "Borgosatollo",
+    description: "Comune di Borgosatollo.",
+    type: SPONSORS_TYPES.MUNICIPALITY,
+    links: {
+      web: "comune.borgosatollo.bs.it",
+      instagram: "comunediborgosatollo",
+      facebook: "comune.borgosatollo",
+    }
   }
 ];
