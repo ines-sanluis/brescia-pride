@@ -43,7 +43,7 @@ const schedule = [
       "Istituzioni"
     ],
     onlySpeeches: true,
-    href: "/intereventi"
+    href: "/interventi"
   },
   {
     title: "Festa",
