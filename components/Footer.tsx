@@ -50,6 +50,10 @@ export default function Footer() {
         </p>
       </div>
       <style jsx>{`
+        footer {
+          background-color: var(--white);
+          border-top: 1px solid var(--text-color);
+        }
         .footer-details {
           display: flex;
           flex-direction: column;
