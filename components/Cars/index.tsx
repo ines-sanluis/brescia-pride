@@ -1,6 +1,6 @@
 import React from "react";
 import Car from "../Car";
-import { cars, extraMusic } from "../../utils/constants";
+import { cars } from "../../utils/constants";
 
 export default function Cars() {
   return (
@@ -8,17 +8,12 @@ export default function Cars() {
       {cars.map((car, index) => (
         <Car
           key={index}
-          number={(index + 1).toString()}
+          number={car.title === "Appel" ? "+" : (index + 1).toString()}
           title={car.title}
           desc={car.desc}
+          instagram={car.tag}
         />
       ))}
-      <Car
-        key={extraMusic.title}
-        number="+"
-        title={extraMusic.title}
-        desc={extraMusic.desc}
-        />
     </>
   );
 }

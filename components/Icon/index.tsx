@@ -3,7 +3,7 @@ import React from "react";
 interface Props {
   color: string;
   backgroundColor: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   name?: string;
   desc?: string;
 }
@@ -21,15 +21,15 @@ export default function Icon({
         <div 
           className="icon-title"
         >
-          <span 
+          {children && <span 
             className="icon"
             aria-label={"hidden"}
             role="img"
-          >{children}</span>
+          >{children}</span>}
           {name && (
-            <p>
-              <span className="name">{name}. </span>
-              {desc ? <span className="icon-desc">{desc}</span> : null}
+            <p className="name">
+              <span>{name}</span>
+              {desc ? <span className="icon-desc">{desc}.</span> : null}
             </p>
           )}
         </div>
@@ -38,6 +38,7 @@ export default function Icon({
         .icon-container {
           display: flex;
           flex-direction: column;
+          margin-bottom: var(--gutter);
         }
         .icon-title {
           display: flex;
@@ -59,7 +60,12 @@ export default function Icon({
           white-space: nowrap;
         }
         .name {
+          display: flex;
+          flex-direction: column;
+        }
+        .name > span:first-child {
           font-weight: 600;
+          margin-bottom: var(--half-gutter);
         }
       `}</style>
     </>

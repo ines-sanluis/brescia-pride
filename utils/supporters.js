@@ -231,4 +231,48 @@ export const supporters = [
       instagram: "musicadabere",
     },
   },
+  {
+    title: "Giovani Democratici di Brescia",
+    type: SUPPORTERS_TYPES.ASSOCIATION,
+    description: "Organizzazione politica giovanile di Centrosinistra.",
+    links: {
+      web: "brescia.gd",
+      facebook: "gdbrescia",
+      instagram: "gdbrescia",
+    }
+  },
+  {
+    title: "Diluvio",
+    type: SUPPORTERS_TYPES.ASSOCIATION,
+    description: "Diluvio è un'associazione culturale nata nel giugno 2016 con lo scopo no profit di offrire iniziative musicali e culturali in provincia. L'evento principale organizzato dall'associazione è Diluvio Festival, un evento annuale giunto all'ottava edizione, che si svolge ora al Parco del Maglio di Ome.",
+    links: {
+      instagram: "diluviofestival",
+    }
+  },
+  {
+    title: "Belafonte Cocktails",
+    type: SUPPORTERS_TYPES.BUSINESS,
+    description: "Cocktail bar in Carmine.",
+    links: {
+      instagram: "belafonte.cocktails",
+    }
+  },
+  {
+    title: "DVArea",
+    type: SUPPORTERS_TYPES.BUSINESS,
+    description: "La prima società italiana di servizi per la progettazione a costituirsi come 'benefit', con un modello sostenibile che sposa i temi dell'ambiente.",
+    links: {
+      web: "dvarea.vision"
+    }
+  },
+  {
+    title: "5R Zero Sprechi",
+    type: SUPPORTERS_TYPES.ASSOCIATION,
+    description: "No-profit per l'ambiente.",
+    links: {
+      web: "5rzerosprechi.it",
+      facebook: "5RZeroSprechi",
+      instagram: "5r_zerosprechi"
+    }
+  }
 ];

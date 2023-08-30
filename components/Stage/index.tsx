@@ -37,6 +37,9 @@ export default function Stage() {
             <span>Per garantire a chi ne abbia la necessità di poter seguire gli interventi senza rischiare iperstimolazione, sarà presente anche durante il Corteo.</span>
           </p>
         </div>
+        <p className="banchetti">
+          <span>In piazza troverai anche un EcoPoint e banchetti di diverse realtà della zona.</span>
+        </p>
       </div>
       <style jsx>{`
         .stage-legend {
@@ -82,6 +85,9 @@ export default function Stage() {
         .circle-white::before {
           background-color: var(--white);
           border: 1.5px solid var(--text-color);
+        }
+        .banchetti {
+          margin-top: var(--gutter2x);
         }
       `}</style>
     </>

@@ -17,45 +17,13 @@ export default function Supporters() {
   return (
     <>
       <PageLayout title="Sostenitori">
-        <p>L'unione fa la forza e sei ancora in tempo!</p>
-        <section>
-          <h2>Patrocini</h2>
-          <p>
-            Se sei un Comune o un’istituzione, inviaci una mail e prendi parte
-            al cambiamento.
-          </p>
-          <p>
-            Il cambiamento parte dalle persone e dalle istituzioni: sostenere il
-            Comitato vuol dire lottare per una società più equa, inclusiva e
-            rispettosa. Per questo contiamo sul vostro patrocinio per l’edizione
-            2023 di Brescia Pride!
-          </p>
-          <Button
-            onClick={sendEmail}
-            text="Scrivici"
-            color="green"
-            hoverColor="purple"
-          />
-        </section>
-        <section>
-          <h2>Adesioni</h2>
-          <p>
-            Sei un’istituzione, un collettivo, un’associazione o una realtà e
-            vuoi dimostrare il tuo impegno per Brescia Pride? Ti aspettiamo!
-          </p>
-          <Button
-            onClick={openForm}
-            text="Compila il modulo"
-            color="green"
-            hoverColor="purple"
-          />
-        </section>
         <section>
           <p>
             Esprimiamo la nostra gratitudine ai nostri preziosi sostenitori che
             hanno aderito o concesso il patrocinio al nostro progetto. Il vostro
             sostegno è fondamentale.
           </p>
+          <h2>Patrocini</h2>
           {Object.values(SPONSORS_TYPES).map((type) => {
             let filteredSupporters = sponsors.filter(
               (supporter) => supporter.type === type
@@ -67,8 +35,7 @@ export default function Supporters() {
                   area-aria-labelledby={`type${type}`}
                 >
                   <h3 key={`type${type}`} id={`type${type}`}>
-                    <span>{filteredSupporters.length} {type}</span>
-                    <span>{filteredSupporters.length > 1 ? "Patrocinano" : "Patrocina"}</span>
+                    {filteredSupporters.length} {type}
                   </h3>
                   {filteredSupporters.map((supporter, index) => (
                     <Supporter
@@ -82,6 +49,7 @@ export default function Supporters() {
               );
             }
           })}
+          <h2>Adesioni</h2>
           {Object.values(SUPPORTERS_TYPES).map((type) => {
             let filteredSupporters = supporters.filter(
               (supporter) => supporter.type === type
@@ -93,8 +61,7 @@ export default function Supporters() {
                   area-aria-labelledby={`type${type}`}
                 >
                   <h3 key={`type${type}`} id={`type${type}`}>
-                    <span>{filteredSupporters.length} {type}</span>
-                    <span>{filteredSupporters.length > 1 ? "Aderiscono" : "Aderisce"}</span>
+                    {filteredSupporters.length} {type}
                   </h3>
                   {filteredSupporters.map((supporter, index) => (
                     <Supporter
@@ -118,13 +85,7 @@ export default function Supporters() {
           display: flex;
           justify-content: space-between;
           border-bottom: 2px solid var(--green);
-        }
-        h3 > span:first-child {
           color: var(--green);
-        }
-        h3 > span:last-child {
-          color: var(--green);
-          font-family: inherit;
         }
         .buttons {
           display: flex;

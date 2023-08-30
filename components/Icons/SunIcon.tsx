@@ -5,11 +5,12 @@ export interface Props {
   backgroundColor: string;
   color: string;
   name: string;
+  desc?: string;
 }
 
-export default function Sun({ backgroundColor, color, name }: Props) {
+export default function Sun({ backgroundColor, color, name, desc }: Props) {
   return (
-    <Icon color={color} backgroundColor={backgroundColor} name={name}>
+    <Icon color={color} backgroundColor={backgroundColor} name={name} desc={desc}>
       <svg
         stroke="currentColor"
         fill="currentColor"

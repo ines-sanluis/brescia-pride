@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface Props {
   title: string;
@@ -6,9 +7,10 @@ interface Props {
   time: string;
   color: string;
   details?: Array<string>;
+  href?: string;
 }
 
-export default function Time({ title, location, time, color, details}: Props) {
+export default function Time({ title, location, time, color, details, href}: Props) {
   return (
     <>
       <section className="time-container" aria-labelledby={`time-${title}`}>
@@ -17,7 +19,16 @@ export default function Time({ title, location, time, color, details}: Props) {
             <h3 id={`time-${title}`}>{title}</h3>
             {location ? <p>{location}</p> : null}
           </div>
-          <p>{time}</p>
+          <div className="hour">
+            <span>{time}</span>
+            {href && (
+            <Link
+              href={href}
+            >
+              + info
+            </Link>
+        )}
+          </div>
         </div>
         {details?.map((detail, index) => (
           <p key={`time-${title}-detail-${index}`}>{detail}</p>
@@ -37,10 +48,14 @@ export default function Time({ title, location, time, color, details}: Props) {
           width: 100%;
           justify-content: space-between;
         }
-        .time > p {
-          font-family: "ST";
+        .hour {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
           color: var(--${color});
-          margin-top: 4px;
+        }
+        .hour > span {
+          font-family: "ST";
         }
         .time > div > h3 {
           font-family: inherit;
@@ -52,6 +67,7 @@ export default function Time({ title, location, time, color, details}: Props) {
         .time > div > p {
           margin-bottom: var(--gutter);
         }
+        
       `}</style>
     </>
   );

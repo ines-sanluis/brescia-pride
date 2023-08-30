@@ -46,11 +46,6 @@ export default function Contact() {
           <SocialLinks links={socialLinks} />
         </section>
       </PageLayout>
-      <style jsx>{`
-        h2 {
-          color: var(--brown);
-        }
-      `}</style>
     </>
   );
 }

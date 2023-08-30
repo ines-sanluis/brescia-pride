@@ -9,9 +9,11 @@ import Stage from "../components/Stage";
 import Schedule from "../components/Schedule";
 import Accessibility from "../components/Accessibility";
 import Care from "../components/Care";
+import Sustainability from "../components/Sustainability";
 import Cars from "../components/Cars";
 import Button from "../components/Button";
 import Guests from "../components/Guests";
+import Rest from "../components/Rest";
 
 export default function EntryPoint() {
   // Hide arrow when the user has scrolled down
@@ -39,34 +41,9 @@ export default function EntryPoint() {
     },
     {
       title: "Il Percorso",
-      desc: ["Sempre più centrale ed intrecciato alle vie principali della nostra città che sono teatro di cultura e comunità."],
+      desc: ["Sempre più centrale ed intrecciato alle vie principali della nostra città che sono teatro di cultura e comunità.", "Con partenza alle 16h da Piazza Vittoria verso Via Musei."],
       component: Path,
-    },
-    {
-      title: "Servizi",
-      desc: ["Non mancheranno accorgimenti necessari per rendere questo giorno davvero accessibile a chiunque:"],
-      component: Accessibility,
-    },
-    {
-      title: "Carri",
-      desc: ["Sei realtà ci accompagneranno durante la sfilata dei nostri corpi e delle nostre reivindicazioni lungo le vie della città."],
-      component: Cars,
-    },
-    {
-      title: "Piazza",
-      desc: ["La piazza sarà il luogo di incontro e di reinvinicazione, dove potrai ascoltare gli interventi dell3 ospiti."],
-      component: Stage,
-    },
-    {
-      title: "Ospiti",
-      desc: ["Saranno con noi per raccontare le loro esperienze e le loro battaglie."],
-      component: Guests,
-    },
-    {
-      title: "Cura",
-      desc: ["Per rendere la giornata ulteriormente sicura per tutt3, ti invitiamo a qualche accorgimento."],
-      component: Care,
-    },
+    }
   ];
 
   useEffect(() => {
@@ -113,7 +90,6 @@ export default function EntryPoint() {
         }
         h1 {
           font-size: 2.5rem;
-          color: var(--brown);
         }
         h2 {
           font-size: 2.5rem;

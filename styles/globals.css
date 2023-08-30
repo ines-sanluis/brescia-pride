@@ -11,7 +11,7 @@
   --gutter10x: calc(var(--gutter) * 10);
   --gutter2x: calc(var(--gutter) * 2);
   --gutter3x: calc(var(--gutter) * 3);
-  --border-radius: 12px;
+  --border-radius: 8px;
   --blue-light: #6EC1E4;
   --brown: #603600;
   --yellow: #F2C94C;

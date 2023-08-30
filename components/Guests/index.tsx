@@ -43,7 +43,21 @@ export default function Guests() {
         </div>
       ))}
       <style jsx>{`
-        .speech h3 
+        .speech {
+          display: flex;
+          flex-direction: column;
+          background-color: var(--white);
+          border: 2px solid var(--blue);
+          border-radius: var(--border-radius);
+        }
+        h3 {
+          padding: var(--gutter);
+          background-color: var(--blue);
+          color: var(--pink);
+        }
+        p {
+          padding: var(--gutter);
+        }
         .pronouns {
           margin-left: 10px;
           font-family: inherit;

@@ -37,6 +37,19 @@ export default function NavBar() {
     };
   }, []);
 
+  const navLinks = [
+    { title: "Il Corteo", href: "/", sublinks: [
+      { title: "Percorso e Carri", href: "/percorso" },
+      { title: "Accessibilità", href: "/accessibilita" },
+      { title: "Cura", href: "/cura" },
+      { title: "Interventi", href: "/interventi" },
+      { title: "Festa in Carmine", href: "/festa" },
+    ] },
+    { title: "Chi siamo", href: "/about-us" },
+    { title: "Manifesto", href: "/manifest" },
+    { title: "Adesioni e Patrocini", href: "/supporters" },
+    { title: "Contatto", href: "/contact" },
+  ]
   return (
     <>
       <header>
@@ -54,44 +67,34 @@ export default function NavBar() {
           </div>
         </div>
         <nav>
-          <Link
-            href="/"
-            className={currentRoute === "/" ? "link link-active" : "link"}
-          >
-            Home
-          </Link>
-          <Link
-            href="/about-us"
-            className={
-              currentRoute === "/about-us" ? "link link-active" : "link"
-            }
-          >
-            Chi siamo
-          </Link>
-          <Link
-            href="/manifest"
-            className={
-              currentRoute === "/manifest" ? "link link-active" : "link"
-            }
-          >
-            Manifesto
-          </Link>
-          <Link
-            href="/supporters"
-            className={
-              currentRoute === "/supporters" ? "link link-active" : "link"
-            }
-          >
-            Adesioni e Patrocini
-          </Link>
-          <Link
-            href="/contact"
-            className={
-              currentRoute === "/contact" ? "link link-active" : "link"
-            }
-          >
-            Contatto
-          </Link>
+        {navLinks.map((link, index) => (
+            <div key={index} className="link-container">
+              <Link
+                href={link.href}
+                className={
+                  currentRoute === link.href ? "link link-active" : "link"
+                }
+              >
+                {link.title}
+              </Link>
+              {link.sublinks && isMenuOpen && (
+                <ul className="sublinks">
+                  {link.sublinks.map((sublink, subIndex) => (
+                    <li key={subIndex}>
+                      <Link 
+                        href={sublink.href}
+                        className={
+                          currentRoute === sublink.href ? "sublink sublink-active" : "sublink"
+                        }
+                      >
+                        {sublink.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
         </nav>
       </header>
       {/* Move your CSS to an external stylesheet for better separation */}
@@ -132,47 +135,26 @@ export default function NavBar() {
           background: var(--white);
           width: 100%;
         }
-        .link {
+        .link-container {
+          width: 100%;
+        }
+        .link, .sublink {
+          display: block;
           padding: var(--gutter2x);
           width: 100%;
           border-bottom: 1px solid var(--brown);
           text-decoration: none;
         }
-        .link:hover {
+        .link:hover,
+        .sublink:hover {
           transition: transform 0.2s ease-in-out;
         }
-        .link:nth-child(1):hover,
-        .link:nth-child(5):hover {
-          background-color: var(--brown);
-          color: var(--yellow);
-        }
-        .link:nth-child(2):hover {
-          background-color: var(--red);
-          color: var(--pink);
-        }
-        .link:nth-child(3):hover {
-          background-color: var(--blue);
-          color: var(--pink);
-        }
-        .link:nth-child(4):hover {
-          background-color: var(--green);
-          color: var(--purple);
-        }
-        .link-active {
+        .link-active,
+        .sublink-active {
           text-decoration: underline;
         }
-        .link-active:nth-child(1),
-        .link-active:nth-child(5) {
-          color: var(--brown);
-        }
-        .link-active:nth-child(2) {
-          color: var(--red);
-        }
-        .link-active:nth-child(3) {
-          color: var(--blue);
-        }
-        .link-active:nth-child(4) {
-          color: var(--green);
+        .sublink {
+          padding-left: var(--gutter6x);
         }
         .hamburguer-container {
           padding: var(--gutter);

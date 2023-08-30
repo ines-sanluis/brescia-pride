@@ -1,10 +1,9 @@
-import React from "react";
-import Image from "next/image";
-import Button from "../Button";
-import { googleMapLink } from "../../utils/constants";
+import React from "react"
+import Image from "next/image"
+import Button from "../Button"
+import { googleMapLink } from "../../utils/constants"
 
 export default function Path() {
-
   return (
     <>
       <div className="path">
@@ -51,5 +50,5 @@ export default function Path() {
         }
       `}</style>
     </>
-  );
+  )
 }
