@@ -34,7 +34,7 @@ export default function EntryPoint() {
     },
     {
       title: "Il Percorso",
-      desc: ["Sempre più centrale ed intrecciato alle vie principali della nostra città che sono teatro di cultura e comunità.", "Con partenza alle 16h da Piazza Vittoria verso Via Musei."],
+      desc: ["Sempre più centrale ed intrecciato alle vie principali della nostra città che sono teatro di cultura e comunità.", "Con partenza alle 16h da Piazza Vittoria verso Spalto San Marco."],
       component: Path,
     }
   ];
