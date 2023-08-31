@@ -70,7 +70,7 @@ export default function About() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Ci trovi su Instagram come @{socialLinks.instagram}.
+                Ci trovi su Instagram come @{socialLinks.instagram}
               </a>
             }
           />
