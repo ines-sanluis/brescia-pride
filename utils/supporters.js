@@ -274,5 +274,32 @@ export const supporters = [
       facebook: "5RZeroSprechi",
       instagram: "5r_zerosprechi"
     }
+  },
+  {
+    title: "Critical Mass Brescia",
+    type: SUPPORTERS_TYPES.ASSOCIATION,
+    description: "We are not blocking traffic, we are traffic! Le strade appartengono anche ai ciclisti, è ora di reclamarle.",
+    links: {
+      instagram: "criticalmass_brescia",
+      facebook: "bresciacriticalmass"
+    }
+  },
+  {
+    title: "CGIL Brescia",
+    type: SUPPORTERS_TYPES.ASSOCIATION,
+    description: "Camera del Lavoro di Brescia. La più antica organizzazione sindacale italiana.",
+    links: {
+      web: "cgil.brescia.it",
+      instagram: "cgil.brescia",
+      facebook: "cgil.bs"
+    }
+  },
+  {
+    title: "Caramelle in Piedi",
+    type: SUPPORTERS_TYPES.ASSOCIATION,
+    description: "Attivistз della porta accanto: astenersi intolleranti a glucosio e parità di diritti. Effetti collaterali: moti d’orgoglio, transfemminismo, iperattività. Attiva a Brescia dal 2016.",
+    links: {
+      instagram: "caramelleinpiedi",
+    }
   }
 ];
