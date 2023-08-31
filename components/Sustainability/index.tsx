@@ -55,7 +55,7 @@ export default function Sustainability()  {
       <li><Icon
         color="green"
         backgroundColor="purple"
-        name="utela la città che ci accoglie e chi la attraversa"
+        name="Tutela la città che ci accoglie e chi la attraversa"
         desc="Non scarabocchiare i muri, non
         accendere fumogeni o agenti di disturbo per l’ambiente e le persone che ti
         circondano"
