@@ -63,7 +63,7 @@ export default function Interventi() {
               color="blue"
               backgroundColor="pink"
               name="Banchetto informativo"
-              desc="Famiglie Arcobaleno + Ageto + Pianeta Viola"
+              desc="Famiglie Arcobaleno + Agedo + Pianeta Viola"
             />
           </li>
           <li>
