@@ -5,15 +5,8 @@ import AppLayout from "../components/AppLayout";
 import ArrowDown from "../components/Icons/ArrowDown";
 import Path from "../components/Path";
 import Section from "../components/Section";
-import Stage from "../components/Stage";
 import Schedule from "../components/Schedule";
-import Accessibility from "../components/Accessibility";
-import Care from "../components/Care";
-import Sustainability from "../components/Sustainability";
-import Cars from "../components/Cars";
 import Button from "../components/Button";
-import Guests from "../components/Guests";
-import Rest from "../components/Rest";
 
 export default function EntryPoint() {
   // Hide arrow when the user has scrolled down

@@ -13,7 +13,6 @@ export default function AppLayout({ children }: Props) {
     <div>
       <Head>
         <title>{title}</title>
-        <meta http-equiv="Content-Language" content="it"></meta>
         <meta
           name="description"
           content={title}

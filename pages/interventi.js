@@ -3,6 +3,7 @@ import PageLayout from "../components/PageLayout";
 import Stage from "../components/Stage";
 import Guests from "../components/Guests";
 import Schedule from "../components/Schedule";
+import Hosts from "../components/Hosts";
 
 export default function Interventi() {
 
@@ -29,6 +30,15 @@ export default function Interventi() {
           Saranno con noi per raccontare le loro esperienze e le loro battaglie.
         </p>
         <Guests />
+      </section>
+      <section className="paragraph" id="presentator">
+        <h2>Presentator3</h2>
+        <p style={{
+          marginBottom: "var(--gutter)"
+        }}>
+          Per raccontare una storia serve sempre qualcunə che la introduca nel modo giusto.
+        </p>
+        <Hosts />
       </section>
       <style jsx>{`
         .paragraph,

@@ -45,7 +45,7 @@ export default function Interventi() {
           <h3>Palco 4</h3>
           <address>Via Porta Pile</address>
         </div>
-        <p className="artist">Carro Figli delle Stelle - Fgiaca DJ</p>
+        <p className="artist">Carro Figli delle Stelle + Artemisia - Fgiaca DJ</p>
         <p>con Sottoscala, Gughi e Paco Bar</p>
       </section>
       <section className="paragraph">
@@ -131,8 +131,12 @@ export default function Interventi() {
         }
         .stage-title {
           display: flex;
-          gap: var(--gutter);
-          align-items: end;
+          flex-direction: column;
+          margin-bottom: var(--gutter);
+          gap: var(--half-gutter);
+        }
+        address {
+          font-style: normal;
         }
         .artist {
           text-transform: uppercase;
