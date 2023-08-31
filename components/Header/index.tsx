@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { title } from "../../utils/constants";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import ArrowDown from "../Icons/ArrowDown";
+import ArrowUp from "../Icons/ArrowUp";
 
 export default function NavBar() {
   const [showBackground, setShowBackground] = useState(false);
@@ -9,6 +11,11 @@ export default function NavBar() {
   const [resized, setResized] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const currentRoute = useRouter().pathname;
+  const [showCorteo, setShowCorteo] = useState(false);
+
+  const expandCorteo = () => {
+    setShowCorteo(!showCorteo);
+  }
 
   useEffect(() => {
     setShowBackground(scrolled || resized);
@@ -37,19 +44,40 @@ export default function NavBar() {
     };
   }, []);
 
-  const navLinks = [
-    { title: "Il Corteo", href: "/", sublinks: [
-      { title: "Percorso e Carri", href: "/percorso" },
-      { title: "Accessibilità", href: "/accessibilita" },
-      { title: "Cura", href: "/cura" },
-      { title: "Interventi", href: "/interventi" },
-      { title: "Festa in Carmine", href: "/festa" },
-    ] },
-    { title: "Chi siamo", href: "/about-us" },
-    { title: "Manifesto", href: "/manifest" },
-    { title: "Adesioni e Patrocini", href: "/supporters" },
-    { title: "Contatto", href: "/contact" },
-  ]
+  const links = {
+    HOME: {
+      title: "Home",
+      href: "/",
+    },
+    ABOUT_US: {
+      title: "Chi siamo",
+      href: "/chi-siamo",
+    },
+    MANIFEST: {
+      title: "Manifesto",
+      href: "/manifesto",
+    },
+    SUPPORTERS: {
+      title: "Adesioni e Patrocini",
+      href: "/adesioni",
+    },
+    CONTACT: {
+      title: "Contatto",
+      href: "/contatto",
+    },
+    CORTEO: {
+      title: "Il Corteo",
+      href: "/",
+      sublinks: [
+        { title: "Percorso e Carri", href: "/percorso" },
+        { title: "Accessibilità", href: "/accessibilita" },
+        { title: "Cura", href: "/cura" },
+        { title: "Interventi", href: "/interventi" },
+        { title: "Festa in Carmine", href: "/festa" },
+      ]
+    }
+  }
+
   return (
     <>
       <header>
@@ -67,34 +95,76 @@ export default function NavBar() {
           </div>
         </div>
         <nav>
-        {navLinks.map((link, index) => (
-            <div key={index} className="link-container">
-              <Link
-                href={link.href}
-                className={
-                  currentRoute === link.href ? "link link-active" : "link"
-                }
-              >
-                {link.title}
-              </Link>
-              {link.sublinks && isMenuOpen && (
-                <ul className="sublinks">
-                  {link.sublinks.map((sublink, subIndex) => (
-                    <li key={subIndex}>
-                      <Link 
-                        href={sublink.href}
-                        className={
-                          currentRoute === sublink.href ? "sublink sublink-active" : "sublink"
-                        }
-                      >
-                        {sublink.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          ))}
+        <div className="link-wrapper">
+          <Link
+            href={links.HOME.href}
+            className={
+              currentRoute === links.HOME.href ? "link link-active" : "link"
+            }
+          >
+            {links.HOME.title}
+          </Link>
+        </div>
+        <div className="link-container" onClick={expandCorteo}>
+          <div className="link-wrapper">
+            <span className="link">{links.CORTEO.title}</span>
+            {showCorteo ? <ArrowUp color="text-color" size="2rem" /> : <ArrowDown color="text-color" size="2rem"/>}
+          </div>
+        </div>
+        {showCorteo && <div className="sublinks">
+        {links.CORTEO.sublinks.map((link) => (
+          <div className="sublink-wrapper">
+            <Link
+              href={link.href}
+              className={
+                currentRoute === link.href ? "sublink sublink-active" : "sublink"
+              }
+            >
+              {link.title}
+            </Link>
+          </div>
+        ))}
+        </div>}
+        <div className="link-wrapper">
+          <Link
+            href={links.MANIFEST.href}
+            className={
+              currentRoute === links.MANIFEST.href ? "link link-active" : "link"
+            }
+          >
+            {links.MANIFEST.title}
+          </Link>
+        </div>
+        <div className="link-wrapper">
+          <Link
+            href={links.ABOUT_US.href}
+            className={
+              currentRoute === links.ABOUT_US.href ? "link link-active" : "link"
+            }
+          >
+            {links.ABOUT_US.title}
+          </Link>
+        </div>
+        <div className="link-wrapper">
+          <Link
+            href={links.SUPPORTERS.href}
+            className={
+              currentRoute === links.SUPPORTERS.href ? "link link-active" : "link"
+            }
+          >
+            {links.SUPPORTERS.title}
+          </Link>
+        </div>
+        <div className="link-wrapper">
+          <Link
+            href={links.CONTACT.href}
+            className={
+              currentRoute === links.CONTACT.href ? "link link-active" : "link"
+            }
+          >
+            {links.CONTACT.title}
+          </Link>
+        </div>
         </nav>
       </header>
       {/* Move your CSS to an external stylesheet for better separation */}
@@ -130,19 +200,38 @@ export default function NavBar() {
           display: ${isMenuOpen ? "flex" : "none"};
           pointer-events: ${isMenuOpen ? "all" : "none"};
           flex-direction: column;
-          font-family: ST;
           transition: opacity 0.2s ease-in-out;
           background: var(--white);
           width: 100%;
         }
+        .link-wrapper {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-right: var(--gutter2x);
+          border-bottom: 1px solid var(--text-color);
+        }
+        .link-wrapper:hover {
+          color: var(--yellow);
+          background-color: var(--brown);
+        }
+        .link-wrapper:hover .link {
+          color: var(--yellow);
+        }
+        .sublinks {
+          border-bottom: 1px solid var(--text-color);
+        }
         .link-container {
           width: 100%;
+        }
+        .link {
+          font-family: ST;
         }
         .link, .sublink {
           display: block;
           padding: var(--gutter2x);
           width: 100%;
-          border-bottom: 1px solid var(--brown);
           text-decoration: none;
         }
         .link:hover,
@@ -154,7 +243,13 @@ export default function NavBar() {
           text-decoration: underline;
         }
         .sublink {
-          padding-left: var(--gutter6x);
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: -0.7px;
+        }
+        .sublink:hover {
+          color: var(--yellow);
+          background-color: var(--brown);
         }
         .hamburguer-container {
           padding: var(--gutter);
