@@ -278,7 +278,7 @@ export const supporters = [
   {
     title: "Critical Mass Brescia",
     type: SUPPORTERS_TYPES.ASSOCIATION,
-    description: "We are not blocking traffic, we are traffic! Le strade appartengono anche ai ciclisti, è ora di reclamarle.",
+    description: "Le strade appartengono anche ai ciclisti, è ora di reclamarle. Il corteo sarà a piedi, quindi per la sicurezza di tuttə occuperemo le ultime file spingendo le bici a mano, come già fatto in altre occasioni.",
     links: {
       instagram: "criticalmass_brescia",
       facebook: "bresciacriticalmass"
