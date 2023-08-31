@@ -28,6 +28,12 @@ export default function Percorso() {
           Con partenza alle 16h da Piazza Vittoria verso Via Musei.
         </p>
         <Path />
+        <p>
+        Attraversa IV Novembre, Gramsci, Vittorio Emanuele II, Spalto San Marco,
+Crispi, Tosio, Cereto, Cattaneo, P.zza Tebaldo Brusato, Vicolo Settentrionale, Via Dei
+Musei, Via Solone Reccagni, Piazza Martiri di Belfiore, Via Mazzini, Corso Zanardelli,
+Via X Giornate, IV Novembre.
+        </p>
       </section>
       <section className="paragraph" id="servizi">
         <h2>Servizi</h2>
