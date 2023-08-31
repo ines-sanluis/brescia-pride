@@ -108,7 +108,7 @@ export default function NavBar() {
         <div className="link-container" onClick={expandCorteo}>
           <div className="link-wrapper">
             <span className="link">{links.CORTEO.title}</span>
-            {showCorteo ? <ArrowUp color="text-color" size="2rem" /> : <ArrowDown color="text-color" size="2rem"/>}
+            {showCorteo ? <ArrowUp color="yellow" size="2rem" /> : <ArrowDown color="text-color" size="2rem"/>}
           </div>
         </div>
         {showCorteo && <div className="sublinks">

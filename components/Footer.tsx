@@ -28,7 +28,7 @@ export default function Footer() {
       </section>
       <SocialLinks links={socialLinks} />
       <div className="credits">
-        {/* <p>
+        <p>
           Fatto da  <a
             href="https://linkedin.com/in/ines-sanluis"
             target="_blank"
@@ -37,7 +37,7 @@ export default function Footer() {
             >
             Inés San Luís
           </a>
-        </p> */}
+        </p>
         <p>
           <a
             href="https://github.com/ines-sanluis/brescia-pride"
