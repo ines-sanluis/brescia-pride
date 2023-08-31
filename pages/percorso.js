@@ -25,7 +25,7 @@ export default function Percorso() {
           Sempre più centrale ed intrecciato alle vie principali della nostra città che sono teatro di cultura e comunità.
         </p>
         <p>
-          Con partenza alle 16h da Piazza Vittoria verso Via Musei.
+          Con partenza alle 16h da Piazza Vittoria verso Via Spalto San Marco.
         </p>
         <Path />
         <p>
