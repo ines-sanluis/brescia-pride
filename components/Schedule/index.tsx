@@ -8,10 +8,9 @@ const schedule = [
     time: "h 15",
     details: [],
     onlySpeeches: false,
-    href: ""
   },
   {
-    title: "Interventi",
+    title: "Interventi pre-corteo",
     location: "Piazza Vittoria",
     time: "h 15:30",
     details: [
@@ -23,7 +22,7 @@ const schedule = [
     href: "/interventi"
   },
   {
-    title: "Partenza Corteo",
+    title: "Partenza del Corteo",
     time: "h 16",
     location: "Piazza Vittoria",
     details: [],
@@ -31,9 +30,15 @@ const schedule = [
     href: "/percorso"
   },
   {
-    title: "Arrivo e interventi dal palco",
+    title: "Rientro del Corteo",
     location: "Piazza Vittoria",
     time: "h 18",
+    onlySpeeches: false,
+  },
+  {
+    title: "Interventi dal palco",
+    location: "Piazza Vittoria",
+    time: "h 18:30",
     details: [
       "Comitato Brescia Pride",
       "Famiglie Arcobaleno+Agedo",
@@ -46,9 +51,15 @@ const schedule = [
     href: "/interventi"
   },
   {
+    title: "Termine interventi",
+    location: "Piazza Vittoria",
+    time: "h 20",
+    onlySpeeches: true
+  },
+  {
     title: "Festa",
     location: "Carmine",
-    time: "h 20 - h23:30",
+    time: "h 20:30 - h23:30",
     details: [],
     onlySpeeches: false,
     href: "/festa"
