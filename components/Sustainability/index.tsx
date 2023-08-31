@@ -55,8 +55,10 @@ export default function Sustainability()  {
       <li><Icon
         color="green"
         backgroundColor="purple"
-        name="Non sono ammessi fumogeni"
-        desc="Per motivi di sicurezza"
+        name="utela la città che ci accoglie e chi la attraversa"
+        desc="Non scarabocchiare i muri, non
+        accendere fumogeni o agenti di disturbo per l’ambiente e le persone che ti
+        circondano"
       />
       </li>
       </ul>

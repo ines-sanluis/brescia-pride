@@ -23,7 +23,7 @@ export default function Care()  {
         color="green"
         backgroundColor="purple"
         name="Rivolgiti alle persone di riferimento"
-        desc="Se vedi o subisci qualcosa che non va, non restare indifferente: rivolgiti alle persone di riferimento"
+        desc="Se ti trovi in difficoltà o vedi/subisci qualcosa che non va, non restare indifferente: rivolgiti alle persone di riferimento"
         />
         </li>
       <li><SunIcon
