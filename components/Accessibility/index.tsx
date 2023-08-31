@@ -8,6 +8,7 @@ import StimToyIcon from "../Icons/StimToyIcon";
 import BatteryIcon from "../Icons/BatteryIcon";
 import MuteIcon from "../Icons/MuteIcon";
 import ChairIcon from "../Icons/ChairIcon";
+import LiveIcon from "../Icons/LiveIcon";
 
 export default function Accessibility() {
   return (
@@ -20,11 +21,18 @@ export default function Accessibility() {
           desc="Porta con te una borraccia per ridurre l’impatto ambientale"
         />
         </li>
+        <li><LiveIcon
+          color="red"
+          backgroundColor="pink"
+          name="Diretta streaming"
+          desc="Tutti gli interventi saranno resi accessibili online attraverso la diretta di ÈliveBrescia TV e rimarrà reperibile successivamente"
+        />
+        </li>
         <li><InterpretingIcon
           color="red"
           backgroundColor="pink"
           name="Interpretariato LIS"
-          desc="In diretta per tutta la durata degli interventi"
+          desc="Consigliamo a chi ne ufruisce di posizionarsi nella Zona Blu sottopalco per una migliore visibilità"
         />
         </li>
         <li><PersonIcon
@@ -38,6 +46,7 @@ export default function Accessibility() {
           color="red"
           backgroundColor="pink"
           name="Servizi igienici accessibili"
+          desc="In Bar Torre D'Ercole, Bar Black Sheep, COIN, Schiaccia, McDonald's, Bar Amante, Caffè dei Corte, Caffè Magenta e L'Enfant Terrible"
         />
         </li>
         <li><HeartIcon

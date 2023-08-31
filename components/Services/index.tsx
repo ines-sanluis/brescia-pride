@@ -32,6 +32,7 @@ export default function Services() {
         color="brown"
         backgroundColor="yellow"
         name="Servizi igienici accessibili"
+        desc="In Bar Torre D'Ercole, Bar Black Sheep, COIN, Schiaccia, McDonald's, Bar Amante, Caffè dei Corte, Caffè Magenta e L'Enfant Terrible"
       />
       <HeartIcon
         color="brown"
@@ -43,7 +44,7 @@ export default function Services() {
         color="brown"
         backgroundColor="yellow"
         name="Ecopoint"
-        desc="Posizionato in Piazza Vittoria e gestito da 5R Zero Sprecchi. Troverete porta mozziconi e ci sarà anche un punto di raccolta di telefoni e tablet non più utilizzabili"
+        desc="Posizionato in Piazza Vittoria e gestito da 5R Zero Sprechi. Troverete porta mozziconi e ci sarà anche un punto di raccolta di telefoni e tablet non più utilizzabili"
       />
     </>
   );

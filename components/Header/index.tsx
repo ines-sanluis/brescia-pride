@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { title } from "../../utils/constants";
+import { socialLinks, title } from "../../utils/constants";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import ArrowDown from "../Icons/ArrowDown";
 import ArrowUp from "../Icons/ArrowUp";
+import SocialLinks from "../SocialLinks";
 
 export default function NavBar() {
   const [showBackground, setShowBackground] = useState(false);
@@ -72,7 +73,7 @@ export default function NavBar() {
         { title: "Percorso e Carri", href: "/percorso" },
         { title: "Accessibilità", href: "/accessibilita" },
         { title: "Cura", href: "/cura" },
-        { title: "Interventi", href: "/interventi" },
+        { title: "Piazza e interventi", href: "/interventi" },
         { title: "Festa in Carmine", href: "/festa" },
       ]
     }
@@ -108,7 +109,7 @@ export default function NavBar() {
         <div className="link-container" onClick={expandCorteo}>
           <div className="link-wrapper">
             <span className="link">{links.CORTEO.title}</span>
-            {showCorteo ? <ArrowUp color="yellow" size="2rem" /> : <ArrowDown color="text-color" size="2rem"/>}
+            {showCorteo ? <ArrowUp color="text-color" size="2rem" /> : <ArrowDown color="text-color" size="2rem"/>}
           </div>
         </div>
         {showCorteo && <div className="sublinks">
@@ -165,6 +166,9 @@ export default function NavBar() {
             {links.CONTACT.title}
           </Link>
         </div>
+        <div className="social">
+          <SocialLinks links={socialLinks} />
+        </div>
         </nav>
       </header>
       {/* Move your CSS to an external stylesheet for better separation */}
@@ -203,6 +207,7 @@ export default function NavBar() {
           transition: opacity 0.2s ease-in-out;
           background: var(--white);
           width: 100%;
+          height: 100vh;
         }
         .link-wrapper {
           cursor: pointer;
@@ -225,14 +230,16 @@ export default function NavBar() {
         .link-container {
           width: 100%;
         }
-        .link {
-          font-family: ST;
-        }
         .link, .sublink {
           display: block;
           padding: var(--gutter2x);
           width: 100%;
           text-decoration: none;
+        }
+        .link {
+          font-family: ST;
+          padding-top: var(--gutter3x);
+          padding-bottom: var(--gutter3x);
         }
         .link:hover,
         .sublink:hover {
@@ -279,6 +286,10 @@ export default function NavBar() {
 
         .open .bar:last-child {
           transform: translateY(-15px) rotate(-45deg);
+        }
+
+        .social {
+          margin: auto;
         }
       `}</style>
     </>

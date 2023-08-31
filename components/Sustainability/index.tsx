@@ -35,7 +35,7 @@ export default function Sustainability()  {
         color="green"
         backgroundColor="purple"
         name="Porta telefoni e tablet non più utilizzabili"
-        desc="Saranno raccolti da 5R Zero Sprecchi all'ecopoint di Piazza Vittoria e destinati al progetto Terre Rare del Jane Goodall Institute per ridure l'accumulo di rifiuto tossici e la domanda di minerali"
+        desc="Saranno raccolti da 5R Zero Sprechi all'ecopoint di Piazza Vittoria e destinati al progetto Terre Rare del Jane Goodall Institute per ridure l'accumulo di rifiuto tossici e la domanda di minerali"
       />
       </li>
       <li><Icon

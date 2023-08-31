@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
+
 export default function Stage() {
 
   return (
@@ -26,20 +27,22 @@ export default function Stage() {
           </p>
           <p>
             <span className="circle-blue">Zona Blu</span>
-            <span>Per chi è in carrozzina o chi ha necessità di trovarsi nelle vicinanze del palco per seguire meglio gli interventi - presenza interpreti LIS.</span>
+            <span>Sottopalco.</span>
+            <span>Per chi è in sedia a ruote o chi ha necessità di trovarsi nelle vicinanze del palco per fruire meglio dell'interpretariato LIS.</span>
           </p>
           <p>
             <span className="circle-yellow">Zona Gialla</span>
-            <span>Per famiglie. In cui è possibile accedere con passeggini e distaccarsi dalla massa.</span>
+            <span>Lato palco.</span>
+            <span>Per famiglie e passeggini, in cui è possibile distaccarsi dalla massa. Con attività per bambinз a cura di
+Famiglie Arcobaleno.</span>
           </p>
           <p>
             <span className="circle-white">Zona Bianca</span>
+            <span>Lato destro vicino ai portici e al banchetto.</span>
             <span>Per garantire a chi ne abbia la necessità di poter seguire gli interventi senza rischiare iperstimolazione, sarà presente anche durante il Corteo.</span>
           </p>
         </div>
-        <p className="banchetti">
-          <span>In piazza troverai anche un EcoPoint e banchetti di diverse realtà della zona.</span>
-        </p>
+
       </div>
       <style jsx>{`
         .stage-legend {
@@ -54,8 +57,10 @@ export default function Stage() {
         .stage-legend > p > span:first-child {
           font-weight: 600;
         }
-        .stage-legend > p > span:last-child {
+        .stage-legend > p > span:nth-child(2),
+        .stage-legend > p > span:nth-child(3) {
           margin-left: calc(1.2rem + var(--gutter));
+          margin-bottom: var(--gutter);
         }
         .circle-pink::before,
         .circle-blue::before,
@@ -85,9 +90,6 @@ export default function Stage() {
         .circle-white::before {
           background-color: var(--white);
           border: 1.5px solid var(--text-color);
-        }
-        .banchetti {
-          margin-top: var(--gutter2x);
         }
       `}</style>
     </>

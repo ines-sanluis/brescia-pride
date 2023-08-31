@@ -15,9 +15,9 @@ const schedule = [
     location: "Piazza Vittoria",
     time: "h 15:30",
     details: [
-      "Discorso introduttivo",
+      "Il Comitato vi dà il benvenuto",
       "Student3 scuole di Brescia",
-      "Comitato Brescia Pride"
+      "Discorso sulla cura"
     ],
     onlySpeeches: true,
     href: "/interventi"
