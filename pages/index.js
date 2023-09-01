@@ -7,8 +7,10 @@ import Path from "../components/Path";
 import Section from "../components/Section";
 import Schedule from "../components/Schedule";
 import Button from "../components/Button";
+import { useRouter } from "next/router";
 
 export default function EntryPoint() {
+  const router = useRouter();
   // Hide arrow when the user has scrolled down
   const [showArrow, setShowArrow] = useState(true);
   useEffect(() => {
