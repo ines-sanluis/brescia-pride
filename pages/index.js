@@ -34,7 +34,7 @@ export default function EntryPoint() {
         "Siamo una realtà LGBTQIAPK+, transfemminista queer, intersezionale, collettiva e orizzontale, laica, antifascista e antirazzista basata sui principi di autodeterminazione e non violenza, volta alla sostenibilità sociale e ambientale.",
         "Il nostro manifesto politico contiene i valori in cui crediamo e le richieste che presentiamo alle nostre istituzioni e alla cittadinanza tutta."
       ],
-      component: () => <Button text="Leggi la versione integrale" color="brown" hoverColor="yellow" onClick={() => router.push("/manifest")} width="250px"/>,
+      component: () => <Button text="Leggi la versione integrale" color="brown" hoverColor="yellow" onClick={() => router.push("/manifesto")} width="250px"/>,
     },
     {
       title: "Il Percorso",
