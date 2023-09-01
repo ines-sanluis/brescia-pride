@@ -22,12 +22,12 @@ come tale vogliamo essere riconosciutə.</p>
           <section>
             <p><strong>Quali sono le linee guida di sicurezza?</strong></p>
             <p>Segui le indicazioni del personale e rispetta chi partecipa. Cerca di mantenere un comportamento pacifico e di evitare situazioni rischiose.</p>
-            <a href="https://www.bresciapride.it/cura/">Leggi i nostri consigli</a>
+            <a href="https://www.bresciapride.com/cura/">Leggi i nostri consigli</a>
           </section>
           <section>
             <p><strong>Ho bisogno di assistenza durante l'evento. Cosa devo fare?</strong></p>
             <p>Se hai bisogno di assistenza medica o hai altre necessità durante l'evento, rivolgiti al personale. Siamo qui per aiutarti!</p>
-            <a href="https://www.bresciapride.it/cura/">Scopre i gruppi di riferimento</a>
+            <a href="https://www.bresciapride.com/cura/">Scopre i gruppi di riferimento</a>
           </section>
           <section>
             <p><strong>Posso portare amici o familiari con me?</strong></p>
@@ -38,7 +38,7 @@ come tale vogliamo essere riconosciutə.</p>
             <p><strong>Sono ammesse fotocamere e videocamere?</strong></p>
             <p>Le fotocamere e le videocamere sono ben accette per catturare i momenti speciali. </p>
             <p>Tuttavia, prima di fotografare qualcunx, soprattutto se si tratta di primi piani, o di registrare video che includono altre persone, chiedi sempre il loro consenso!</p>
-            <a href="https://www.bresciapride.it/cura/">Impara a riconoscere i fotograf3 ufficiali</a>
+            <a href="https://www.bresciapride.com/cura/">Impara a riconoscere i fotograf3 ufficiali</a>
           </section>
           <section>
             <p><strong>Chi organizza il Pride?</strong></p>
