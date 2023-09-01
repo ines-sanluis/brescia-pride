@@ -40,7 +40,7 @@ export default function Footer() {
         </p>
         <p>
           <a
-            href="https://github.com/ines-sanluis/brescia-pride"
+            href="https://github.com/ines-sanluis/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
