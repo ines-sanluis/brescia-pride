@@ -4,7 +4,6 @@ export const title = "Brescia Pride";
 export const officialName = "Comitato Brescia Pride ETS";
 export const headquarters = "Via F.lli Folonari 7, 25126 Brescia (BS)";
 export const motto = "La cultura si fa insieme";
-export const phoneNumber = "+39 351 811 0000";
 export const socialLinks = {
   instagram: "bresciapride",
   facebook: "BresciaPride",
@@ -18,16 +17,6 @@ export const emails = {
   events: "eventi@bresciapride.it"
 }
 
-export const emergencyNumbers = [
-  {
-    name: "Gruppo Riduzione Rischi",
-    phones: ["+39 335 211 298 (Valter)", "+39 328 269 1398 (Giovanni)"]
-  },
-  {
-    name: "City Angels",
-    phones: ["+39 340 929 6718 (Enrico)"]
-  }
-]
 export const securityNumber = "98201800178";
 export const supportersForm = "https://docs.google.com/forms/d/e/1FAIpQLSc0MurK0q_ZANj39pOaFtC7YHNKfbjRnflcWpV8oNUEf0yjgg/viewform?pli=1";
 export const countdownUntilNextPride = () => {
