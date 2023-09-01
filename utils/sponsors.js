@@ -123,5 +123,13 @@ export const sponsors = [
       facebook: "comunedimalegno",
       instagram: "comune_malegno"
     }
+  },
+  {
+    title: "Orzivecchi",
+    description: "Comune di Orzivecchi.",
+    type: SPONSORS_TYPES.MUNICIPALITY,
+    links: {
+      web: "comune.orzivecchi.bs.it",
+    }
   }
 ];
