@@ -76,6 +76,10 @@ export default function NavBar() {
         { title: "Piazza e interventi", href: "/interventi" },
         { title: "Festa in Carmine", href: "/festa" },
       ]
+    },
+    FAQ: {
+      title: "FAQ",
+      href: "/faq"
     }
   }
 
@@ -154,6 +158,16 @@ export default function NavBar() {
             }
           >
             {links.SUPPORTERS.title}
+          </Link>
+        </div>
+        <div className="link-wrapper">
+          <Link
+            href={links.FAQ.href}
+            className={
+              currentRoute === links.FAQ.href ? "link link-active" : "link"
+            }
+          >
+            {links.FAQ.title}
           </Link>
         </div>
         <div className="link-wrapper">
