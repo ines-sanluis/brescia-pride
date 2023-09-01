@@ -11,6 +11,7 @@ export default function Interventi() {
       <p>
         La Associazione Carminiamo in collaborazione con Brescia Pride ha organizzato una festa dopo il corteo nel quartiere più colorato della città.
       </p>
+      <section>
       <h2>Carmine</h2>
       <p>
       12 punti di musica dislocati in tutto il Carmine dalle 20:30 fino alle 23:30.
@@ -113,6 +114,51 @@ export default function Interventi() {
         <p>con Artemis</p>
       </section>
       </div>
+      </section>
+      <section>
+        <h2>After party</h2>
+      <p>Il Carmine è un luogo straordinario per trascorrere la serata, ma per rispetto di chi ci abita, la festa si concluderà a una certa ora. Non temete, potrete comunque continuare a ballare dopo le 23:30!</p>
+      <p>
+        Quest'anno, <strong>Brescia Pride non ha pianificato un afterparty ufficiale</strong>. Tuttavia, invitiamo chi desidera continuare a festeggiare a farlo in modo responsabile e gentile, rispettando le ordinanze del Comune e il quieto vivere.
+      </p>
+      <p>
+        Sappiamo che molte realtà hanno organizzato afterparty e vi abbiamo chiesto quali fossero i vostri piani. Vogliamo precisare che questi afterparty non sono organizzati ufficialmente da noi e <strong>non ne abbiamo alcun controllo su di essi</strong>. Tuttavia, abbiamo pensato di fornire delle alternative per soddisfare le vostre esigenze, mentre continuiamo a prenderci cura del Carmine.
+      </p>
+      <p>Ecco alcune delle feste che ci avete segnalato:</p>
+      <section className="paragraph">
+        <div className="stage-title">
+          <h3>Sonida The Club</h3>
+          <address>Via Malta, 10 Brescia</address>
+          <span>Ingresso gratuito</span>
+        </div>
+        <p>
+          Dalle 23:00 in poi, vi aspetta con il suo tradizionale AfterParty che da sempre accoglie chi dopo la lunga giornata non ha ancora voglia di andare a casa, per farvi scatenare ancora con Drag Show & Dj Set.
+        </p>
+        <p>
+        E se a una certa vi stancate di ballare, srotolate un telo e accomodatevi sul prato... Party può essere anche chill! 
+        </p>
+      </section>
+      <section className="paragraph">
+        <div className="stage-title">
+          <h3>Human @ Vinile 45</h3>
+          <address>Via Luigi Abbiati, 45, Brescia BS</address>
+          <span>Ingresso 15€  + 5€ di tessera ARCI</span>
+        </div>
+        <p>
+          Dalle 0.00 in poi, ha in programma un party elettronico, autoprodotto ed organizzato da sei artisti, dj ed appassionati di musica.
+        </p>
+      </section>
+      <section className="paragraph">
+        <div className="stage-title">
+          <h3>PSYLANDIA @ “OH VECIO” Social Club</h3>
+          <address>Via Vergnano 25, Brescia BS</address>
+          <span>Ingresso 10€ con un drink incluso</span>
+        </div>
+        <p>
+          Dalle 23 alle 6, PsyLandia by Red Moon / Illogic Radio / PsyBrixia. Goa & PsyTrance.
+        </p>
+      </section>
+      </section>
       <style jsx>{`
         .container {
           display: flex;
