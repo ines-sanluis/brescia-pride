@@ -62,6 +62,16 @@ export default function Sustainability()  {
       />
       </li>
       </ul>
+      <p className="linkToVideo">
+        <span>Puoi vedere la versione video di queste indicazioni sul</span>
+        <a href="https://fb.watch/mMJTda_ewL/" target="_blank" rel="noopener noreferrer">Facebook di 5R Zero Sprechi</a>
+        <span>.</span>
+      </p>
+      <style jsx>{`
+        .linkToVideo > span:first-child {
+          margin-right: var(--half-gutter)
+        }
+        `}</style>
     </>
   )
 }
