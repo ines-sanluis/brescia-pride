@@ -16,7 +16,7 @@ come tale vogliamo essere riconosciutə.</p>
           <section>
             <p><strong>È un evento accessibile?</strong></p>
             <p>
-              Sì, ci impegniamo a rendere l'evento accessibile! Per ulteriori dettagli, consulta la sezione dedicata.
+              Facciamo del nostro meglio e ci impegniamo a rendere l'evento accessibile! Per ulteriori dettagli, consulta la sezione dedicata.
             </p>
           </section>
           <section>
