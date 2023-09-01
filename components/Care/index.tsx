@@ -15,7 +15,7 @@ export default function Care()  {
         color="green"
         backgroundColor="purple"
         name="Rispetta chi hai intorno"
-        desc="I suoi spazi, la sua identità e il suo consenso"
+        desc="I suoi spazi, la sua identità e il suo consenso. Chiedi prima di toccare o di fotografare qualcunx"
         />
         </li>
         <li>
