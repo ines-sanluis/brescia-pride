@@ -1,0 +1,84 @@
+:root {
+  --text-color: #353839; /* Set your preferred text color */
+  --white: #ededed;
+  --white-50: rgba(255, 255, 255, 0.3);
+  --gutter: 8px;
+  --half-gutter: calc(var(--gutter) / 2);
+  --gutter4x: calc(var(--gutter) * 4);
+  --gutter6x: calc(var(--gutter) * 6);
+  --gutter16x: calc(var(--gutter) * 16);
+  --gutter12x: calc(var(--gutter) * 12);
+  --gutter10x: calc(var(--gutter) * 10);
+  --gutter2x: calc(var(--gutter) * 2);
+  --gutter3x: calc(var(--gutter) * 3);
+  --border-radius: 8px;
+  --blue-light: #6EC1E4;
+  --brown: #603600;
+  --yellow: #F2C94C;
+  --blue: #0A53BC;
+  --green: #01624B;
+  --purple: #D9C4FF;
+  --pink: #FFC1D2;
+  --pink-30: rgba(255, 193, 210, 0.3);
+  --red: #A70027;
+  --shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  --red-shadow: 0 0px 8px rgba(167, 0, 39, 0.3);
+}
+@font-face {
+  font-family: "ST";
+  src: url("../assets/fonts/ST.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--text-color);
+  background-image: url('../public/texture.webp'); /* Path to your grainy texture image */
+  background-size: cover; /* Adjusts the image size to cover the entire div */
+  font-size: 1rem;
+}
+h1, h2, h3 {
+  font-family: ST, sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 2rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gutter4x);
+  margin: auto;
+  max-width: 500px;
+  margin-bottom: 100px;
+  padding-left: var(--gutter2x);
+  padding-right: var(--gutter2x);
+}
+a {
+  color: var(--text-color);
+}
+a:hover {
+  color: var(--blue);
+}
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter2x);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--gutter);
+}
+footer {
+  padding: var(--gutter2x);
+}

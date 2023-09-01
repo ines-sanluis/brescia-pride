@@ -1,17 +1,20 @@
-# OpenAI API Quickstart - Node.js example app
+# Brescia Pride
 
-This is an example pet name generator app used in the OpenAI API [quickstart tutorial](https://beta.openai.com/docs/quickstart). It uses the [Next.js](https://nextjs.org/) framework with [React](https://reactjs.org/). Check out the tutorial or follow the instructions below to get set up.
+Brescia Pride is an inclusive and vibrant community dedicated to celebrating diversity and promoting LGBTQ+ rights and awareness. This project serves as the landing page for Brescia Pride, providing information about events and resources.
 
+## About Brescia Pride
+
+Brescia Pride is an annual event that brings together individuals, organizations, and allies to celebrate the LGBTQ+ community in Brescia and beyond. Our mission is to create a safe and supportive environment where everyone can express themselves freely and proudly.
 ## Setup
 
-1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/)
+1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/) (Node.js version >= 14.6.0 required)
 
 2. Clone this repository
 
 3. Navigate into the project directory
 
    ```bash
-   $ cd openai-quickstart-node
+   $ cd brescia-pride
    ```
 
 4. Install the requirements
@@ -20,18 +23,10 @@ This is an example pet name generator app used in the OpenAI API [quickstart tut
    $ npm install
    ```
 
-5. Make a copy of the example environment variables file
-
-   ```bash
-   $ cp .env.example .env
-   ```
-
-6. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file
-
-7. Run the app
+   1. Run the app
 
    ```bash
    $ npm run dev
    ```
 
-You should now be able to access the app at [http://localhost:3000](http://localhost:3000)! For the full context behind this example app, check out the [tutorial](https://beta.openai.com/docs/quickstart).
+You should now be able to access the app at [http://localhost:3000](http://localhost:3000)!
