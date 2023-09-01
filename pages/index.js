@@ -46,7 +46,7 @@ export default function EntryPoint() {
       desc: [
         "Su questo sito, potrai trovare tutte le informazioni necessarie per partecipare all'evento. Tuttavia, se preferisci, puoi anche scaricare il Vademecum da qui e condividerlo liberamente con chi desideri.",
       ],
-      component: () => <Button id="vademecum" text="Scarica il Vademecum" color="brown" hoverColor="yellow" onClick={download} width="250px"/>,
+      component: () => <Button text="Scarica il Vademecum" color="brown" hoverColor="yellow" onClick={download} width="250px"/>,
     }
   ];
 
@@ -74,7 +74,7 @@ export default function EntryPoint() {
       </div>
       <div className="container">
         {sections.map((section, index) => (
-          <Section key={index} title={section.title} desc={section.desc}>
+          <Section key={index} title={section.title} desc={section.desc} id={section.title.toLowerCase()}>
             <section.component />
           </Section>
         ))}
