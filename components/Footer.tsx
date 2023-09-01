@@ -38,16 +38,16 @@ export default function Footer() {
             Inés San Luís
           </a>
         </p>
-        {/* <p>
+        <p>
           <a
             href="https://github.com/ines-sanluis/brescia-pride"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
+            aria-label="GitHub"
           >
             GitHub
           </a>
-        </p> */}
+        </p>
       </div>
       <style jsx>{`
         footer {
