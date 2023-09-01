@@ -19,6 +19,10 @@ export default function EntryPoint() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const download = () => {
+    window.open("/vademecum.pdf", "_blank");
+  };
+
   const sections = [
     {
       title: "Programma",
@@ -36,6 +40,13 @@ export default function EntryPoint() {
       title: "Il Percorso",
       desc: ["Sempre più centrale ed intrecciato alle vie principali della nostra città che sono teatro di cultura e comunità.", "Con partenza alle 16h da Piazza Vittoria verso Spalto San Marco."],
       component: Path,
+    },
+    {
+      title: "Vademecum",
+      desc: [
+        "Su questo sito, potrai trovare tutte le informazioni necessarie per partecipare all'evento. Tuttavia, se preferisci, puoi anche scaricare il Vademecum da qui e condividerlo liberamente con chi desideri.",
+      ],
+      component: () => <Button id="vademecum" text="Scarica il Vademecum" color="brown" hoverColor="yellow" onClick={download} width="250px"/>,
     }
   ];
 
