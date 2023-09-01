@@ -5,8 +5,10 @@ import SunIcon from '../Icons/SunIcon'
 import TreeIcon from '../Icons/TreeIcon'
 import Heart from '../Icons/HeartIcon'
 import PhoneIcon from '../Icons/PhoneIcon'
+import {emergencyNumbers} from "../../utils/constants"
 
 export default function Care()  {
+  const phoneNumbers = emergencyNumbers.map((number) => number.phones.join(", "))
   return (
     <>
     <ul>
@@ -43,15 +45,15 @@ export default function Care()  {
         color="green"
         backgroundColor="purple"
         name="Impara a riconoscere lo staff"
-        desc="Dalle 15:30 alle 20, ci saranno membri del Comitato e referenti riconoscibili per qualsiasi necessità"
+        desc="Dalle 15:30 alle 20, ci saranno membrə del Comitato e referentə riconoscibili per qualsiasi necessità"
       />
       </li>
       <li>
         <PhoneIcon
           color="green"
           backgroundColor="purple"
-          name="Salva il numero di emergenza"
-          desc="Verrà comunicato il giorno stesso"
+          name="Salva i numeri di emergenza"
+          desc={phoneNumbers.join(", ")}
         />
       </li>
       </ul>

@@ -6,6 +6,7 @@ import RainbowIcon from "../components/Icons/RainbowIcon";
 import CameraIcon from "../components/Icons/CameraIcon";
 import HeartIcon from "../components/Icons/HeartIcon";
 import InfoIcon from "../components/Icons/InfoIcon";
+import { emergencyNumbers } from "../utils/constants";
 
 export default function Accessibilita() {
 
@@ -43,9 +44,9 @@ export default function Accessibilita() {
           <HeartIcon
             color="green"
             backgroundColor="purple"
-            name="Gruppo Cura"
+            name="Gruppo Cura 💜 💚"
             desc="Identificabile con badge di riconoscimento + fascia colorata al
-            braccio (i colori verrano communicati domani). Se hai bisogno di decomprimere o di trovare una delle zone
+            braccio verde e rosa. Se hai bisogno di decomprimere o di trovare una delle zone
             dedicate, hai una segnalazione da fare o c’è qualcosa che non va, rivolgiti a loro"
           />
         </li>
@@ -53,9 +54,9 @@ export default function Accessibilita() {
           <HeartIcon
             color="green"
             backgroundColor="purple"
-            name="Gruppo Riduzione Rischi"
+            name="Gruppo Riduzione Rischi 💜 💙"
             desc="Identificabile con badge di riconoscimento + fascia colorata al
-            braccio (i colori verrano communicati domani). Gestiscono l’ordine del Corteo, monitorano i tempi di
+            braccio rosa e blu. Gestiscono l’ordine del Corteo, monitorano i tempi di
             percorrenza del tragitto e sono a tua disposizione per qualsiasi segnalazione"
           />
         </li>
@@ -66,9 +67,20 @@ export default function Accessibilita() {
             name="STAFF Informazione"
             desc="Identificabile con badge di riconoscimento attaccato
             addosso. Rivolgiti a loro per il percorso, per ricevere indicazioni sulle Zone dedicate o
-            per chiedere info riguardo alla giornata."
+            per chiedere info riguardo alla giornata"
           />
         </li>
+      </ul>
+      <p>In caso di vera emergenza, puoi utilizzare i seguenti contatti dedicati:</p>
+      <ul>
+        {emergencyNumbers.map((number) => (
+          <li>
+            <strong>{number.name}</strong> 
+            {number.phones.map((phone) => (
+              <p>{phone}</p>
+            ))}
+          </li>
+        ))}
       </ul>
       </section>
       <section className="paragraph" id="accessibilità">

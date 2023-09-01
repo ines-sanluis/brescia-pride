@@ -17,11 +17,17 @@ export const emails = {
   press: "ufficiostampa@bresciapride.it",
   events: "eventi@bresciapride.it"
 }
-// expost const emergencyNumbers = [
-//   {
-//     name: ""
-//   }
-// ]
+
+export const emergencyNumbers = [
+  {
+    name: "Gruppo Riduzione Rischi",
+    phones: ["+39 335 211 298 (Valter)", "+39 328 269 1398 (Giovanni)"]
+  },
+  {
+    name: "City Angels",
+    phones: ["+39 340 929 6718 (Enrico)"]
+  }
+]
 export const securityNumber = "98201800178";
 export const supportersForm = "https://docs.google.com/forms/d/e/1FAIpQLSc0MurK0q_ZANj39pOaFtC7YHNKfbjRnflcWpV8oNUEf0yjgg/viewform?pli=1";
 export const countdownUntilNextPride = () => {
