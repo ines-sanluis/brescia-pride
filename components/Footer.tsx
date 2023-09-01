@@ -43,7 +43,7 @@ export default function Footer() {
             href="https://github.com/ines-sanluis/brescia-pride"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
+            aria-label="GitHub"
           >
             GitHub
           </a>

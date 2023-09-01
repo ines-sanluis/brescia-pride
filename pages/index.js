@@ -19,7 +19,6 @@ export default function EntryPoint() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-
   const sections = [
     {
       title: "Il Manifesto",
@@ -28,7 +27,7 @@ export default function EntryPoint() {
         "Il nostro manifesto politico contiene i valori in cui crediamo e le richieste che presentiamo alle nostre istituzioni e alla cittadinanza tutta."
       ],
       component: () => <Button text="Leggi la versione integrale" color="brown" hoverColor="yellow" onClick={() => router.push("/manifest")} width="250px"/>,
-    },
+    }
   ];
 
   useEffect(() => {
