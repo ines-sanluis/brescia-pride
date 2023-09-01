@@ -113,5 +113,15 @@ export const sponsors = [
       instagram: "comunediborgosatollo",
       facebook: "comune.borgosatollo",
     }
+  },
+  {
+    title: "Malegno",
+    description: "Comune di Malegno.",
+    type: SPONSORS_TYPES.MUNICIPALITY,
+    links: {
+      web: "comune.malegno.bs.it",
+      facebook: "comunedimalegno",
+      instagram: "comune_malegno"
+    }
   }
 ];
