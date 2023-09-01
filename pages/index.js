@@ -19,15 +19,8 @@ export default function EntryPoint() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const download = () => {
-    window.open("/vademecum.pdf", "_blank");
-  };
 
   const sections = [
-    {
-      title: "Programma",
-      component: Schedule,
-    },
     {
       title: "Il Manifesto",
       desc: [
@@ -36,18 +29,6 @@ export default function EntryPoint() {
       ],
       component: () => <Button text="Leggi la versione integrale" color="brown" hoverColor="yellow" onClick={() => router.push("/manifest")} width="250px"/>,
     },
-    {
-      title: "Il Percorso",
-      desc: ["Sempre più centrale ed intrecciato alle vie principali della nostra città che sono teatro di cultura e comunità.", "Con partenza alle 16h da Piazza Vittoria verso Spalto San Marco."],
-      component: Path,
-    },
-    {
-      title: "Vademecum",
-      desc: [
-        "Su questo sito, potrai trovare tutte le informazioni necessarie per partecipare all'evento. Tuttavia, se preferisci, puoi anche scaricare il Vademecum da qui e condividerlo liberamente con chi desideri.",
-      ],
-      component: () => <Button text="Scarica il Vademecum" color="brown" hoverColor="yellow" onClick={download} width="250px"/>,
-    }
   ];
 
   useEffect(() => {
@@ -65,14 +46,17 @@ export default function EntryPoint() {
   return (
     <AppLayout>
       <div className="titleHeader">
-        <h1 className="date">{nextDateAsString}</h1>
-        <h2 className="date">P. Vittoria, 15h</h2>
+        <h1 className="date">Grazie!</h1>
         <div className="arrowIcon">
           <h3>{motto}</h3>
           <ArrowDown color="brown" />
         </div>
       </div>
       <div className="container">
+        <section>
+          <p>Il Corteo è stato bellissimo ma Brescia Pride non si ferma qui!</p>
+          <p>Abbiamo intenzione di continuare a promuovere iniziative ed eventi sul territorio per tutto l'anno! Seguici sui nostri social e rimane aggiornatə, a presto!</p>
+        </section>
         {sections.map((section, index) => (
           <Section key={index} title={section.title} desc={section.desc} id={section.title.toLowerCase()}>
             <section.component />
