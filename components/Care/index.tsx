@@ -51,7 +51,7 @@ export default function Care()  {
           color="green"
           backgroundColor="purple"
           name="Salva i numeri di emergenza"
-          desc={phoneNumbers.join(", ")}
+          desc={"Verrà communicato un numero di emergenza il giorno dell'evento"}
         />
       </li>
       </ul>

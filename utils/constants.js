@@ -4,7 +4,6 @@ export const title = "Brescia Pride";
 export const officialName = "Comitato Brescia Pride ETS";
 export const headquarters = "Via F.lli Folonari 7, 25126 Brescia (BS)";
 export const motto = "La cultura si fa insieme";
-export const phoneNumber = "+39 351 811 0000";
 export const socialLinks = {
   instagram: "bresciapride",
   facebook: "BresciaPride",
