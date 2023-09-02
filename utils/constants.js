@@ -88,4 +88,14 @@ const toBase64 = (str) =>
     ? Buffer.from(str).toString("base64")
     : window.btoa(str);
 export const getSkeleton = (w, h) => `data:image/svg+xml;base64,${toBase64(skeleton(w, h))}`;
-export const googleMapLink = "https://www.google.com/maps/d/u/3/viewer?mid=1SyQZiHiyTqY5-DQeOM3ewWhC983hUXY&ll=45.53738069693484%2C10.223865291039047&z=15"
+export const googleMapLink = "https://www.google.com/maps/d/u/3/viewer?mid=1SyQZiHiyTqY5-DQeOM3ewWhC983hUXY&ll=45.53738069693484%2C10.223865291039047&z=15";
+export const emergencyNumbers = [
+  {
+    name: "Gruppo Riduzione Rischi",
+    phones: ["+39 335 211 298 (Valter)", "+39 328 269 1398 (Giovanni)"]
+  },
+  {
+    name: "City Angels",
+    phones: ["+39 340 929 6718 (Enrico)"]
+  }
+]

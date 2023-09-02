@@ -76,7 +76,7 @@ export default function NavBar() {
       sublinks: [
         { title: "Percorso e Carri", href: "/percorso" },
         { title: "Accessibilità", href: "/accessibilita" },
-        { title: "Cura", href: "/cura" },
+        { title: "Personale e Cura", href: "/cura" },
         { title: "Piazza e interventi", href: "/interventi" },
         { title: "Festa in Carmine", href: "/festa" },
       ]
