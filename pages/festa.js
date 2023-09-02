@@ -8,13 +8,12 @@ export default function Interventi() {
       title="Festa"
       name="Scopri l'afterparty"
     >
-      <p>
-        La Associazione Carminiamo in collaborazione con Brescia Pride ha organizzato una festa dopo il corteo nel quartiere più colorato della città.
-      </p>
+      <p>Scopri la festa che abbiamo in programma nel Carmine e alcune alternative per continuare a festeggiare dopo mezzanotte!</p>
       <section>
       <h2>Carmine</h2>
       <p>
-      12 punti di musica dislocati in tutto il Carmine dalle 20:30 fino alle 23:30.
+      La Associazione Carminiamo in collaborazione con Brescia Pride ha organizzato una festa dopo il corteo nel quartiere più colorato della città.</p>
+      <p>12 punti di musica dislocati in tutto il Carmine dalle 20:30 fino alle 23:30.
       </p>
       <div className="container">
       <section className="paragraph">
