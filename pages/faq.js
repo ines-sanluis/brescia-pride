@@ -1,5 +1,6 @@
 import React from "react";
 import PageLayout from "../components/PageLayout";
+import Link from "next/link";
 
 export default function FAQ() {
   return (
@@ -22,12 +23,20 @@ come tale vogliamo essere riconosciutə.</p>
           <section>
             <p><strong>Quali sono le linee guida di sicurezza?</strong></p>
             <p>Segui le indicazioni del personale e rispetta chi partecipa. Cerca di mantenere un comportamento pacifico e di evitare situazioni rischiose.</p>
-            <a href="https://www.bresciapride.com/cura/">Leggi i nostri consigli</a>
+            <Link
+              href="/cura"
+            >
+              Leggi i nostri consigli
+            </Link>
           </section>
           <section>
             <p><strong>Ho bisogno di assistenza durante l'evento. Cosa devo fare?</strong></p>
             <p>Se hai bisogno di assistenza medica o hai altre necessità durante l'evento, rivolgiti al personale. Siamo qui per aiutarti!</p>
-            <a href="https://www.bresciapride.com/cura/">Scopre i gruppi di riferimento</a>
+            <Link
+              href="/cura"
+            >
+              Scopri i gruppi di riferimento
+            </Link>
           </section>
           <section>
             <p><strong>Posso portare amici o familiari con me?</strong></p>
@@ -38,7 +47,11 @@ come tale vogliamo essere riconosciutə.</p>
             <p><strong>Sono ammesse fotocamere e videocamere?</strong></p>
             <p>Le fotocamere e le videocamere sono ben accette per catturare i momenti speciali. </p>
             <p>Tuttavia, prima di fotografare qualcunx, soprattutto se si tratta di primi piani, o di registrare video che includono altre persone, chiedi sempre il loro consenso!</p>
-            <a href="https://www.bresciapride.com/cura/">Impara a riconoscere i fotograf3 ufficiali</a>
+            <Link
+              href="/cura"
+            >
+              Impara a riconoscere i fotograf3 ufficiali
+            </Link>
           </section>
           <section>
             <p><strong>Chi organizza il Pride?</strong></p>

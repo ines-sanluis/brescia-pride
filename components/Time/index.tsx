@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React, { useCallback } from "react";
+import { useRouter } from "next/router";
 
 interface Props {
   title: string;
@@ -11,9 +11,17 @@ interface Props {
 }
 
 export default function Time({ title, location, time, color, details, href}: Props) {
+  const router = useRouter();
+
+  const navigateTo = useCallback(() => {
+    if (href) {
+      router.push(href);
+    }
+  }, [href, router]);
+
   return (
     <>
-      <section className="time-container" aria-labelledby={`time-${title}`}>
+      <section className="time-container" aria-labelledby={`time-${title}`} onClick={navigateTo}>
         <div className="time">
           <div>
             <h3 id={`time-${title}`}>{title}</h3>
@@ -21,13 +29,7 @@ export default function Time({ title, location, time, color, details, href}: Pro
           </div>
           <div className="hour">
             <span>{time}</span>
-            {href && (
-            <Link
-              href={href}
-            >
-              + info
-            </Link>
-        )}
+            {href ? <span>+info</span> : null}
           </div>
         </div>
         {details?.map((detail, index) => (
@@ -48,13 +50,20 @@ export default function Time({ title, location, time, color, details, href}: Pro
           width: 100%;
           justify-content: space-between;
         }
+        .time-container {
+          cursor: ${href ? 'pointer;' : 'default;'}
+        }
+        .time-container:hover {
+          transform: ${href ? 'scale(1.02);' : 'none;'}
+        }
         .hour {
           display: flex;
           flex-direction: column;
           align-items: flex-end;
           color: var(--${color});
+          cursor: pointer;
         }
-        .hour > span {
+        .hour > span:first-child {
           font-family: "ST";
         }
         .time > div > h3 {

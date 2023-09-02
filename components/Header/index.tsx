@@ -14,6 +14,10 @@ export default function NavBar() {
   const currentRoute = useRouter().pathname;
   const [showCorteo, setShowCorteo] = useState(false);
 
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [currentRoute]);
+
   const expandCorteo = () => {
     setShowCorteo(!showCorteo);
   }
@@ -233,10 +237,10 @@ export default function NavBar() {
         }
         .link-wrapper:hover {
           color: var(--yellow);
-          background-color: var(--brown);
         }
         .link-wrapper:hover .link {
-          color: var(--yellow);
+          color: var(--brown);
+          font-size: 1.1rem;
         }
         .sublinks {
           border-bottom: 1px solid var(--text-color);
@@ -269,8 +273,8 @@ export default function NavBar() {
           letter-spacing: -0.7px;
         }
         .sublink:hover {
-          color: var(--yellow);
-          background-color: var(--brown);
+          color: var(--brown);
+          font-size: 1.1rem;
         }
         .hamburguer-container {
           padding: var(--gutter);
