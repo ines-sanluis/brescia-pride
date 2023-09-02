@@ -77,6 +77,9 @@ export default function Schedule({ onlySpeeches, color }: Props) {
       {speechesToShow.map(({ title, location, time, details, href }) => (
         <Time key={`schedule-${title}`} title={title} location={location} time={time} details={details} color={color || "brown"} href={onlySpeeches ? undefined : href}/>
       ))}
+      {!onlySpeeches ? <p>
+        Trova tutti i dettagli della giornata nella sezione Il Corteo del menu.
+      </p> : null}
     </>
   );
 }
