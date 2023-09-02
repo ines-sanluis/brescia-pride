@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { socialLinks, title } from "../../utils/constants";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ArrowDown from "../Icons/ArrowDown";
-import ArrowUp from "../Icons/ArrowUp";
 import SocialLinks from "../SocialLinks";
 
 export default function NavBar() {
@@ -70,21 +68,6 @@ export default function NavBar() {
       title: "Contatto",
       href: "/contatto",
     },
-    CORTEO: {
-      title: "Il Corteo",
-      href: "/",
-      sublinks: [
-        { title: "Percorso e Carri", href: "/percorso" },
-        { title: "Accessibilità", href: "/accessibilita" },
-        { title: "Personale e Cura", href: "/cura" },
-        { title: "Piazza e interventi", href: "/interventi" },
-        { title: "Festa in Carmine", href: "/festa" },
-      ]
-    },
-    FAQ: {
-      title: "FAQ",
-      href: "/faq"
-    }
   }
 
   return (
@@ -114,26 +97,6 @@ export default function NavBar() {
             {links.HOME.title}
           </Link>
         </div>
-        <div className="link-container" onClick={expandCorteo}>
-          <div className="link-wrapper">
-            <span className="link">{links.CORTEO.title}</span>
-            {showCorteo ? <ArrowUp color="text-color" size="2rem" /> : <ArrowDown color="text-color" size="2rem"/>}
-          </div>
-        </div>
-        {showCorteo && <div className="sublinks">
-        {links.CORTEO.sublinks.map((link) => (
-          <div className="sublink-wrapper">
-            <Link
-              href={link.href}
-              className={
-                currentRoute === link.href ? "sublink sublink-active" : "sublink"
-              }
-            >
-              {link.title}
-            </Link>
-          </div>
-        ))}
-        </div>}
         <div className="link-wrapper">
           <Link
             href={links.MANIFEST.href}
@@ -162,16 +125,6 @@ export default function NavBar() {
             }
           >
             {links.SUPPORTERS.title}
-          </Link>
-        </div>
-        <div className="link-wrapper">
-          <Link
-            href={links.FAQ.href}
-            className={
-              currentRoute === links.FAQ.href ? "link link-active" : "link"
-            }
-          >
-            {links.FAQ.title}
           </Link>
         </div>
         <div className="link-wrapper">
