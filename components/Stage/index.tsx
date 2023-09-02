@@ -1,18 +1,20 @@
 import React from "react";
 import Image from "next/image";
-
+import { getSkeleton } from "../../utils/constants";
 
 export default function Stage() {
-
+  const skeleton = getSkeleton(500, 500);
   return (
     <>
       <div className="path">
         <Image
           className="pathImg"
           src="/stage.png"
+          placeholder="blur"
           alt="Per garantire l’accessibilità del percorso di questa edizione abbiamo previsto"
           width={500} // Adjust the width and height as per your requirements
           height={500}
+          blurDataURL={skeleton}
           style={{
             zIndex: 1,
             borderRadius: "var(--border-radius)",

@@ -1,9 +1,10 @@
 import React from "react"
 import Image from "next/image"
 import Button from "../Button"
-import { googleMapLink } from "../../utils/constants"
+import { getSkeleton, googleMapLink } from "../../utils/constants"
 
 export default function Path() {
+  const skeleton = getSkeleton(500, 500)
   return (
     <>
       <div className="path">
@@ -13,6 +14,8 @@ export default function Path() {
           alt="Partenza e Arrivo in Piazza Vittoria, Via Musei, Piazza Tebaldo, Via Spalto S. Marco"
           width={500}
           height={500}
+          placeholder="blur"
+          blurDataURL={skeleton}
           style={{
             zIndex: 1,
             borderRadius: "var(--border-radius)",

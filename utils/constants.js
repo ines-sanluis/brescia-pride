@@ -64,4 +64,28 @@ export const cars = [
   }
 ]
 
+const skeleton = (
+  w,
+  h
+) => `<svg width="${w}" height="${h}" xmlns="http://www.w3.org/2000/svg">
+<!-- Define a linear gradient for the fill -->
+<defs>
+  <linearGradient id="loadingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop stop-color="#E0E0E0" offset="0%" />
+    <stop stop-color="#D0D0D0" offset="25%" />
+    <stop stop-color="#C0C0C0" offset="50%" />
+    <stop stop-color="#D0D0D0" offset="75%" />
+    <animate attributeName="x1" from="0%" to="100%" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="x2" from="100%" to="200%" dur="2s" repeatCount="indefinite" />
+  </linearGradient>
+</defs>
+<!-- Create a rounded rectangle with the smooth loading animation -->
+<rect width="500" height="500" rx="20" ry="20" fill="url(#loadingGradient)" />
+</svg>
+`;
+const toBase64 = (str) =>
+  typeof window === "undefined"
+    ? Buffer.from(str).toString("base64")
+    : window.btoa(str);
+export const getSkeleton = (w, h) => `data:image/svg+xml;base64,${toBase64(skeleton(w, h))}`;
 export const googleMapLink = "https://www.google.com/maps/d/u/3/viewer?mid=1SyQZiHiyTqY5-DQeOM3ewWhC983hUXY&ll=45.53738069693484%2C10.223865291039047&z=15"
