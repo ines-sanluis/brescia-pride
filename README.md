@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Brescia Pride
 
-## Getting Started
+Brescia Pride is an inclusive and vibrant community dedicated to celebrating diversity and promoting LGBTQ+ rights and awareness. This project serves as the landing page for Brescia Pride, providing information about events and resources.
 
-First, run the development server:
+## About Brescia Pride
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Brescia Pride is an annual event that brings together individuals, organizations, and allies to celebrate the LGBTQ+ community in Brescia and beyond. Our mission is to create a safe and supportive environment where everyone can express themselves freely and proudly.
+## Setup
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/) (Node.js version >= 14.6.0 required)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. Clone this repository
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Navigate into the project directory
 
-## Learn More
+   ```bash
+   $ cd brescia-pride
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Install the requirements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   $ npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   1. Run the app
 
-## Deploy on Vercel
+   ```bash
+   $ npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+You should now be able to access the app at [http://localhost:3000](http://localhost:3000)!
