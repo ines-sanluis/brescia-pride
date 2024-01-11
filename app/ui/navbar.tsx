@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const FlipNav = () => {
   return (
-    <nav className="px-2 md:px-8 py-2 md:py-4 border-b-[1px] border-gray-200 hidden md:flex items-center justify-center relative">
+    <nav className="px-2 md:px-8 py-2 md:py-4 hidden md:flex items-center justify-center relative">
       <NavLeft />
     </nav>
   );
