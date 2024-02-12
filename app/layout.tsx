@@ -16,7 +16,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body 
+        className={`
+        ${inter.className} 
+        bg-neutral-50 
+        bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)] 
+        max-w-7xl
+        mx-auto
+        `}
+      >
+        {children}</body>
     </html>
   )
 }

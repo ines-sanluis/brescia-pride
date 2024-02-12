@@ -8,7 +8,7 @@ export const Footer = () => {
   const securityNumber = "98201800178"
   return (
     <>
-    <footer className="flex justify-between px-2 md:px-8 py-4 text-gray-500">
+    <footer className="flex justify-between py-4 text-gray-500">
       <section>
         <p>
           Comitato Brescia Pride ETS

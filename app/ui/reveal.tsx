@@ -8,10 +8,10 @@ const myFont = localFont({src: "fonts/ST.ttf"});
 const RevealCards = () => {
   return (
     <div className="py-8 md:py-12 flex flex-col gap-8" id="cosa-facciamo">
-      <h2 className={`px-2 md:px-8 text-4xl leading-[1.2] md:text-5xl text-neutral-700 ${myFont.className} tracking-wider`}>
+      <h2 className={`text-4xl leading-[1.2] md:text-5xl text-neutral-700 ${myFont.className} tracking-wider`}>
         Le nostre attività
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-2 md:px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card
           title="Eventi"
           description="Organizziamo e supportiamo eventi informativi, formativi e aggregativi queer."

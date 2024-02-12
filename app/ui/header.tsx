@@ -10,7 +10,7 @@ const ShuffleHero = () => {
   return (
     <section
       id="manifesto"
-      className="w-full px-2 md:px-8 py-8 md:py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-6xl mx-auto"
+      className="w-full py-8 md:py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto"
     >
       <div>
         <h1 className={`tracking-wider text-6xl leading-[1.2] text-green md:text-6xl ${myFont.className}`}>

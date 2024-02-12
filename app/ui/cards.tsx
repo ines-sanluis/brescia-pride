@@ -26,8 +26,8 @@ const CollapseCardFeatures = () => {
   };
 
   return (
-    <section className="overflow-hidden px-2 md:px-8 py-8 md:py-12" id="chi-siamo">
-      <div className="flex flex-col md:block gap-4 mx-auto max-w-6xl">
+    <section className="overflow-hidden py-8 md:py-12" id="chi-siamo">
+      <div className="flex flex-col md:block gap-4 mx-auto">
         <div className="flex items-center justify-between gap-4 md:mb-8">
           <h2 className={`hidden md:block text-4xl leading-[1.2] md:text-5xl text-neutral-700 ${myFont.className} tracking-wider`}>
             La nostra storia

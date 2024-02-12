@@ -6,7 +6,7 @@ import RevealCards from "./ui/reveal";
 
 export default function Home() {
   return (
-      <div className="bg-neutral-50 bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)]">
+      <div>
         <FlipNav />
         <main>
           <ShuffleHero />
