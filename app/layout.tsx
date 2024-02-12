@@ -21,8 +21,9 @@ export default function RootLayout({
         ${inter.className} 
         bg-neutral-50 
         bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)] 
-        max-w-7xl
+        md:max-w-7xl
         mx-auto
+        px-2
         `}
       >
         {children}</body>
