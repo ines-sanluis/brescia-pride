@@ -17,18 +17,18 @@ export default function RevealBento() {
         transition={{
           staggerChildren: 0.05,
         }}
-        className="mx-auto grid max-w-4xl grid-flow-dense grid-cols-4 gap-4"
+        className="mx-auto flex flex-col md:grid md:max-w-4xl md:grid-flow-dense md:grid-cols-4 gap-4"
       >
         <HeaderBlock />
-        <Block className="col-span-1 p-0">
+        <Block className="col-span-1 p-0 hidden md:block">
           <img src="/images/8.jpg" alt="Image 1" className="rounded-lg w-full h-full object-cover" />
         </Block>
         <SocialsBlock />
         <FightBlock />
-        <Block className="col-span-1 p-0">
+        <Block className="col-span-1 p-0 hidden md:block">
           <img src="/images/16.jpg" alt="Image 1" className="rounded-lg w-full h-full object-cover" />
         </Block>
-        <Block className="col-span-1 p-0">
+        <Block className="col-span-1 p-0 hidden md:block">
           <img src="/images/10.jpg" alt="Image 1" className="rounded-lg w-full h-full object-cover" />
         </Block>
         <DonationBlock />
@@ -102,7 +102,7 @@ const FightBlock = () => (
 );
 
 const SocialsBlock = () => (
-  <>
+  <div className="hidden md:block">
     <Block
       whileHover={{
         rotate: "-2.5deg",
@@ -163,7 +163,7 @@ const SocialsBlock = () => (
         <SiGmail />
       </a>
     </Block>
-  </>
+  </div>
 );
 
 const DonationBlock = () => (
