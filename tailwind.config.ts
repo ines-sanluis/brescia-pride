@@ -16,8 +16,13 @@ const config: Config = {
       colors: {
         "purple": "#D9C4FF",
         "green": "#01624B",
-        "light-green": "#018D6D",
         "red": "#A70027",
+        "pink": "#FFD6E0",
+        "light-red": "#AB5C5C",
+        "orange": "#fa4c18",
+        "cream": "#fbf6e5",
+        "dark-blue": "#08263a",
+        "light-green": "#dff1cb"
       },
     },
   },

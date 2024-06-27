@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import StickyCountdown from './ui/countdown'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,14 +20,15 @@ export default function RootLayout({
       <body 
         className={`
         ${inter.className} 
-        bg-neutral-50 
-        bg-[radial-gradient(circle_800px_at_100%_200px,#d5c5ff,transparent)] 
-        md:max-w-7xl
-        mx-auto
-        px-2
+        bg-neutral-200
         `}
       >
-        {children}</body>
+        <StickyCountdown  />
+        <main className="md:max-w-7xlmx-auto
+        px-2">
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
