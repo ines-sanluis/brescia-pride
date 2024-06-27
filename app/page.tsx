@@ -126,7 +126,7 @@ const SocialsBlock = () => (
       className="bg-cream hidden md:block"
     >
       <a
-        href="#"
+        href="https://www.tiktok.com/@bresciapride"
         target="_blank"
         className="grid h-full place-content-center text-3xl text-dark-blue"
       >
@@ -141,7 +141,7 @@ const SocialsBlock = () => (
       className="bg-cream hidden md:block"
     >
       <a
-        href="https://www.facebook.com/BresciaPride"
+        href="mailto:info@bresciapride.it"
         target="_blank"
         className="grid h-full place-content-center text-3xl text-dark-blue"
       >
