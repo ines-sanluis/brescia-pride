@@ -102,13 +102,13 @@ const FightBlock = () => (
 );
 
 const SocialsBlock = () => (
-  <div className="hidden md:block">
+  <>
     <Block
       whileHover={{
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="bg-cream"
+      className="bg-cream hidden md:block"
     >
       <a
         href="https://www.instagram.com/bresciapride"
@@ -123,7 +123,7 @@ const SocialsBlock = () => (
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="bg-cream"
+      className="bg-cream hidden md:block"
     >
       <a
         href="#"
@@ -138,7 +138,7 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="bg-cream"
+      className="bg-cream hidden md:block"
     >
       <a
         href="https://www.facebook.com/BresciaPride"
@@ -153,7 +153,7 @@ const SocialsBlock = () => (
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="w-100 bg-cream"
+      className="w-100 bg-cream hidden md:block"
     >
       <a
         href="https://www.facebook.com/BresciaPride"
@@ -163,7 +163,7 @@ const SocialsBlock = () => (
         <SiGmail />
       </a>
     </Block>
-  </div>
+  </>
 );
 
 const DonationBlock = () => (
