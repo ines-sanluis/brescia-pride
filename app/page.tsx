@@ -96,7 +96,7 @@ const FightBlock = () => (
        Lottiamo
       </span>
       <span>
-      Per l'equità, l'inclusività, la sostenibilità ambientale, e la promozione e il rispetto dei diritti umani.</span>
+      Per l{"'"}equità, l{"'"}inclusività, la sostenibilità ambientale, e la promozione e il rispetto dei diritti umani.</span>
     </h1>
   </Block>
 );
