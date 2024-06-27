@@ -74,7 +74,7 @@ const Block = ({ className, ...rest }: BlockProps) => {
 
 const HeaderBlock = () => (
   <Block className="bg-orange col-span-3">
-    <h1 className="mb-12 text-4xl font-medium leading-tight text-cream">
+    <h1 className="mb-12 text-2xl md:text-4xl font-medium leading-tight text-cream">
       <span className={`font-bold mr-2 ${myFont.className}`}>
        Ciao!
       </span>
@@ -91,7 +91,7 @@ const HeaderBlock = () => (
 
 const FightBlock = () => (
   <Block className="col-span-4 row-span-2 bg-dark-blue">
-    <h1 className="text-4xl font-medium leading-tight text-light-green">
+    <h1 className="text-2xl md:text-4xl font-medium leading-tight text-light-green">
     <span className={`font-bold mr-2 ${myFont.className}`}>
        Lottiamo
       </span>
@@ -168,7 +168,7 @@ const SocialsBlock = () => (
 
 const DonationBlock = () => (
 <Block className="bg-red col-span-2">
-    <h1 className="mb-12 text-4xl font-medium leading-tight text-pink">
+    <h1 className="mb-12 text-2xl md:text-4xl font-medium leading-tight text-pink">
       <span>
         Puoi aiutarci con una donazione, anche piccola, per sostenere le nostre attività.
       </span>
