@@ -80,12 +80,13 @@ const HeaderBlock = () => (
       </span>
       Siamo una realtà intersezionale, transfemminista, antifascista, gentile e autogestita.
     </h1>
-    {/* <a
-      href="#"
+    <a
+      href="https://bresciapride.com/manifesto.pdf"
+      target="_blank"
       className="flex items-center gap-1 text-cream hover:underline"
     >
       Leggi il manifesto<FiArrowRight />
-    </a> */}
+    </a>
   </Block>
 );
 
