@@ -33,7 +33,7 @@ export default function RevealBento() {
         </Block>
         <DonationBlock />
       </motion.div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
