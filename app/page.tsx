@@ -4,7 +4,7 @@ import React from "react";
 import localFont from "next/font/local";
 import { MotionProps, motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
-import { FiArrowRight, FiMail, FiMapPin } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 import { SiFacebook, SiGmail, SiInstagram, SiTiktok } from "react-icons/si";
 const myFont = localFont({src: "ui/fonts/ST.ttf"});
 
@@ -17,7 +17,7 @@ export default function RevealBento() {
         transition={{
           staggerChildren: 0.05,
         }}
-        className="mx-auto flex flex-col md:grid md:max-w-4xl md:grid-flow-dense md:grid-cols-4 gap-4"
+        className="mx-auto flex flex-col md:grid md:max-w-6xl md:grid-flow-dense md:grid-cols-4 gap-4"
       >
         <HeaderBlock />
         <Block className="col-span-1 p-0 hidden md:block">
