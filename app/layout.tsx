@@ -23,7 +23,6 @@ export default function RootLayout({
         bg-neutral-200
         `}
       >
-        <StickyCountdown  />
         <main className="md:max-w-7xlmx-auto
         px-2">
           {children}

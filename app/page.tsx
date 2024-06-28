@@ -19,6 +19,7 @@ export default function RevealBento() {
         }}
         className="mx-auto flex flex-col md:grid md:max-w-6xl md:grid-flow-dense md:grid-cols-4 gap-4"
       >
+        <LogoBlock />
         <HeaderBlock />
         <Block className="col-span-1 p-0 hidden md:block">
           <img src="/images/8.jpg" alt="Image 1" className="rounded-lg w-full h-full object-cover" />
@@ -72,12 +73,29 @@ const Block = ({ className, ...rest }: BlockProps) => {
   );
 };
 
+const LogoBlock = () => {
+  const finalDate = new Date("2024-09-07").getTime();
+  const now = new Date().getTime();
+  const distance = finalDate - now;
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+  return (
+    <Block className="bg-green col-span-4 row-span-1">
+    <h1 className="mb-12 text-2xl md:text-4xl font-medium leading-tight text-pink">
+
+    <span className={`font-bold mr-2 ${myFont.className}`}>
+       Brescia Pride
+      </span>
+      Più unite e compatte che mai, ci vogliamo far sentire, per progettare insieme una società a misura di ogni persona. Ci vediamo in piazza il 7 settembre.
+    </h1>
+  </Block>
+  );
+
+}
+
 const HeaderBlock = () => (
   <Block className="bg-orange col-span-3">
     <h1 className="mb-12 text-2xl md:text-4xl font-medium leading-tight text-cream">
-      <span className={`font-bold mr-2 ${myFont.className}`}>
-       Ciao!
-      </span>
       Siamo una realtà intersezionale, transfemminista, antifascista, gentile e autogestita.
     </h1>
     <a
@@ -93,11 +111,8 @@ const HeaderBlock = () => (
 const FightBlock = () => (
   <Block className="col-span-4 row-span-2 bg-dark-blue">
     <h1 className="text-2xl md:text-4xl font-medium leading-tight text-light-green">
-    <span className={`font-bold mr-2 ${myFont.className}`}>
-       Lottiamo
-      </span>
       <span>
-      Per l{"'"}equità, l{"'"}inclusività, la sostenibilità ambientale, e la promozione e il rispetto dei diritti umani.</span>
+      Lottiamo per l{"'"}equità, l{"'"}inclusività, la sostenibilità ambientale, e la promozione e il rispetto dei diritti umani.</span>
     </h1>
   </Block>
 );
