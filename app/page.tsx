@@ -21,6 +21,7 @@ export default function RevealBento() {
       >
         <LogoBlock />
         <HeaderBlock />
+        <CommunicatoBlock />
         <Block className="col-span-1 p-0 hidden md:block">
           <img src="/images/8.jpg" alt="Image 1" className="rounded-lg w-full h-full object-cover" />
         </Block>
@@ -93,8 +94,24 @@ const LogoBlock = () => {
 
 }
 
+const CommunicatoBlock = () => (
+  <Block className="bg-[#f9c224] col-span-3">
+    <h1 className="mb-12 text-2xl md:text-4xl font-medium leading-tight text-[#033150]">
+      Alla luce dei recenti avvenimenti, ci uniamo alla voce delle associazioni LGBTQIA+ e T* che da mesi denunciano il costante e preoccupante attacco alla libertà di scelta e autodeterminazione.
+    </h1>
+    <a
+      href="https://bresciapride.com/comunicato.pdf"
+      target="_blank"
+      className="flex items-center gap-1 text-[#033150] hover:underline"
+    >
+      Leggi il comunicato<FiArrowRight />
+    </a>
+  </Block>
+);
+
+
 const HeaderBlock = () => (
-  <Block className="bg-orange col-span-3">
+  <Block className="bg-orange col-span-4">
     <h1 className="mb-12 text-2xl md:text-4xl font-medium leading-tight text-cream">
       Siamo una realtà intersezionale, transfemminista, antifascista, gentile e autogestita.
     </h1>

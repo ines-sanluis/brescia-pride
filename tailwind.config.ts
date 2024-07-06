@@ -22,7 +22,9 @@ const config: Config = {
         "orange": "#fa4c18",
         "cream": "#fbf6e5",
         "dark-blue": "#08263a",
-        "light-green": "#dff1cb"
+        "light-green": "#dff1cb",
+        "blue": "#2596be",
+        "brown": "#5b3608",
       },
     },
   },
