@@ -20,8 +20,8 @@ export default function RevealBento() {
         className="mx-auto flex flex-col md:grid md:max-w-6xl md:grid-flow-dense md:grid-cols-4 gap-4"
       >
         <LogoBlock />
-        <HeaderBlock />
         <CommunicatoBlock />
+        <HeaderBlock />
         <Block className="col-span-1 p-0 hidden md:block">
           <img src="/images/8.jpg" alt="Image 1" className="rounded-lg w-full h-full object-cover" />
         </Block>
