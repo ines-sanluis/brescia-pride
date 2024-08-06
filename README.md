@@ -1,10 +1,11 @@
 # Brescia Pride
 
-Brescia Pride is an inclusive and vibrant community dedicated to celebrating diversity and promoting LGBTQ+ rights and awareness. This project serves as the landing page for Brescia Pride, providing information about events and resources.
+Brescia Pride is a community dedicated to promoting LGBTQ+ rights and awareness in Italy. This project serves as the landing page for their website.
 
-## About Brescia Pride
+## Tech Stack
 
-Brescia Pride is an annual event that brings together individuals, organizations, and allies to celebrate the LGBTQ+ community in Brescia and beyond. Our mission is to create a safe and supportive environment where everyone can express themselves freely and proudly.
+This app is built using [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/). It is currently deployed using [Vercel](https://vercel.com/).
+
 ## Setup
 
 1. If you don’t have Node.js installed, [install it from here](https://nodejs.org/en/) (Node.js version >= 14.6.0 required)
@@ -30,6 +31,17 @@ Brescia Pride is an annual event that brings together individuals, organizations
    ```
 
 You should now be able to access the app at [http://localhost:3000](http://localhost:3000)!
+
+## App Structure
+
+Currently, the app is structured as a single-page site. The entry point for the application is `app/page.tsx`, which utilizes various components and fonts located under the `app/ui/components` directory.
+
+- **Block**: The fundamental component used throughout the app to create a Bento grid-like layout.
+- **Text Block**: Used for displaying text content.
+- **Image Block**: Used for displaying images.
+- **Social Network Links Block**: Used for displaying social network links.
+
+Additionally, the `motion` library is used for animations within the app.
 
 ## Contributing
 
