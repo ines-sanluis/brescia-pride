@@ -1,70 +1,100 @@
 import Block from "../Block";
 
-import { SiFacebook, SiGmail, SiInstagram, SiTiktok } from "react-icons/si";
+import {SiFacebook, SiGmail, SiInstagram} from "react-icons/si";
 
 const SocialsBlock = () => (
-  <>
-    <Block
+    <>
+        <Block
+            whileHover={{
+                rotate: "-2.5deg",
+                scale: 1.1,
+            }}
+            className="w-100 bg-pink p-6"
+        >
+            <a
+                href="https://www.instagram.com/bresciapride"
+                target="_blank"
+                className="grid h-full place-content-center text-4xl text-red hover:text-6xl transition-all duration-300"
+            >
+                <SiInstagram/>
+            </a>
+        </Block>
+        {/* <Block
       whileHover={{
         rotate: "-2.5deg",
         scale: 1.1,
       }}
-      className="bg-cream hidden md:block p-6"
-    >
-      <a
-        href="https://www.instagram.com/bresciapride"
-        target="_blank"
-        className="grid h-full place-content-center text-3xl text-black"
-      >
-        <SiInstagram />
-      </a>
-    </Block>
-    <Block
-      whileHover={{
-        rotate: "-2.5deg",
-        scale: 1.1,
-      }}
-      className="bg-cream hidden md:block p-6"
+      className="w-100 bg-cream p-6"
     >
       <a
         href="https://www.tiktok.com/@bresciapride"
         target="_blank"
-        className="grid h-full place-content-center text-3xl text-dark-blue"
+        className="grid h-full place-content-center text-3xl text-black"
       >
         <SiTiktok />
       </a>
-    </Block>
-    <Block
+    </Block> */}
+        <Block
+            whileHover={{
+                rotate: "-2.5deg",
+                scale: 1.1,
+            }}
+            className="w-100 bg-lilac p-6"
+        >
+            <a
+                href="https://www.facebook.com/BresciaPride"
+                target="_blank"
+                className="grid h-full place-content-center text-4xl text-green hover:text-6xl transition-all duration-300"
+            >
+                <SiFacebook/>
+            </a>
+        </Block>
+        <Block
+            whileHover={{
+                rotate: "2.5deg",
+                scale: 1.1,
+            }}
+            className="w-100 bg-lime p-6"
+        >
+            <a
+                href="mailto:info@bresciapride.it"
+                target="_blank"
+                className="grid h-full place-content-center text-4xl text-blue hover:text-6xl transition-all duration-300"
+            >
+                <SiGmail/>
+            </a>
+        </Block>
+        {/* <Block
       whileHover={{
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="bg-cream hidden md:block p-6"
+      className="w-100 bg-cream p-6"
     >
       <a
-        href="mailto:info@bresciapride.it"
+        href="https://linktr.ee/bresciapride"
         target="_blank"
-        className="grid h-full place-content-center text-3xl text-dark-blue"
+        className="grid h-full place-content-center text-3xl text-black"
       >
-        <SiFacebook />
+        <SiLinktree />
       </a>
-    </Block>
-    <Block
+    </Block> */}
+        {/* <Block
       whileHover={{
         rotate: "2.5deg",
         scale: 1.1,
       }}
-      className="w-100 bg-cream hidden md:block p-6"
+      className="w-100 bg-cream p-6"
     >
       <a
-        href="https://www.facebook.com/BresciaPride"
+        href="https://www.paypal.com/paypalme/bresciapride"
         target="_blank"
-        className="grid h-full place-content-center text-3xl text-dark-blue"
+        className="grid h-full place-content-center text-3xl text-black"
       >
-        <SiGmail />
+        <SiPaypal />
       </a>
-    </Block>
-  </>
+    </Block> */}
+    </>
 );
 
 SocialsBlock.displayName = "SocialsBlock";
